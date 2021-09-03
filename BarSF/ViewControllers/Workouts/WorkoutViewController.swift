@@ -521,56 +521,56 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
             
         }
     @objc func didTapGluteDrive(_ sender: UIButton) {
-        let vcOne = storyboard?.instantiateViewController(identifier: "GluteDriveViewController") as! UIViewController
+        let vcOne = storyboard?.instantiateViewController(identifier: "GluteDriveViewController") ?? WorkOutViewController() as UIViewController
     present(vcOne, animated: true, completion:nil)
         }
     @objc func didTapBelt(_ sender: UIButton) {
-        let vcOne = storyboard?.instantiateViewController(identifier: "BeltSquatViewController") as! UIViewController
+        let vcOne = storyboard?.instantiateViewController(identifier: "BeltSquatViewController") ?? WorkOutViewController() as UIViewController
           present(vcOne, animated: true, completion:nil)
         }
     @objc func didTapLegPress(_ sender: UIButton) {
-        let vcOne = storyboard?.instantiateViewController(identifier: "LegPressVIewController") as! UIViewController
+        let vcOne = storyboard?.instantiateViewController(identifier: "LegPressVIewController") ?? WorkOutViewController() as UIViewController
           present(vcOne, animated: true, completion:nil)
         }
     @objc func didTapHax(_ sender: UIButton) {
-        let vcOne = storyboard?.instantiateViewController(identifier: "HaxSquatMachineViewController") as! UIViewController
+        let vcOne = storyboard?.instantiateViewController(identifier: "HaxSquatMachineViewController") ?? WorkOutViewController() as UIViewController
           present(vcOne, animated: true, completion:nil)
         }
     @objc func didTapCalf(_ sender: UIButton) {
-        let vcOne = storyboard?.instantiateViewController(identifier: "StandingCalfMachineViewController") as! UIViewController
+        let vcOne = storyboard?.instantiateViewController(identifier: "StandingCalfMachineViewController") ?? WorkOutViewController() as UIViewController
           present(vcOne, animated: true, completion:nil)
         }
     
     @objc func didTapLegCurl(_ sender: UIButton) {
-        let vcOne = storyboard?.instantiateViewController(identifier: "SeatedLegCurlViewController") as! UIViewController
+        let vcOne = storyboard?.instantiateViewController(identifier: "SeatedLegCurlViewController") ?? WorkOutViewController() as UIViewController
           present(vcOne, animated: true, completion:nil)
         }
     @objc func didTapLyingLeg(_ sender: UIButton) {
-        let vcOne = storyboard?.instantiateViewController(identifier: "LyingLegExtensionViewController") as! UIViewController
+        let vcOne = storyboard?.instantiateViewController(identifier: "LyingLegExtensionViewController") ?? WorkOutViewController() as UIViewController
           present(vcOne, animated: true, completion:nil)
         }
     @objc func didTapLegEx(_ sender: UIButton) {
         
-        let vcOne = storyboard?.instantiateViewController(identifier: "LegExtensionViewController") as! UIViewController
+        let vcOne = storyboard?.instantiateViewController(identifier: "LegExtensionViewController") ?? WorkOutViewController() as UIViewController
           present(vcOne, animated: true, completion:nil)
             
         }
     @objc func didTapInverse(_ sender: UIButton) {
-        let vcOne = storyboard?.instantiateViewController(identifier: "RegistrationViewController") as! UIViewController
+        let vcOne = storyboard?.instantiateViewController(identifier: "RegistrationViewController") ?? WorkOutViewController() as UIViewController
           present(vcOne, animated: true, completion:nil)
         }
     @objc func didTapGlute(_ sender: UIButton) {
         
-      let vcOne = storyboard?.instantiateViewController(identifier: "GluteatorViewController") as! UIViewController
+      let vcOne = storyboard?.instantiateViewController(identifier: "GluteatorViewController") ?? WorkOutViewController() as UIViewController
         present(vcOne, animated: true, completion:nil)
         
         }
     @objc func didTapSuper(_ sender: UIButton) {
-        let vcOne = storyboard?.instantiateViewController(identifier: "SuperSquatViewController") as! UIViewController
+        let vcOne = storyboard?.instantiateViewController(identifier: "SuperSquatViewController") ?? WorkOutViewController() as UIViewController
           present(vcOne, animated: true, completion:nil)
         }
     @objc func didTapStandingCurl(_ sender: UIButton) {
-        let vcOne = storyboard?.instantiateViewController(identifier: "StandingLegCurlViewController") as! UIViewController
+        let vcOne = storyboard?.instantiateViewController(identifier: "StandingLegCurlViewController") ?? WorkOutViewController() as UIViewController
           present(vcOne, animated: true, completion:nil)
         }
     @objc func didTapIsoLatLow(_ sender: UIButton) {

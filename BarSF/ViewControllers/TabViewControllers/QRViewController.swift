@@ -115,12 +115,14 @@ extension QRViewController: AVCaptureMetadataOutputObjectsDelegate {
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         // Check if the metadataObjects array is not nil and it contains at least one object
         if metadataObjects.isEmpty {
+            print("------------------------------")
             qrCodeFrameView?.frame = CGRect.zero
             
             captureSession.stopRunning()
             captureSession.startRunning()
             return
         }
+
      
         // Get the metadata object
         guard let metadataObj = metadataObjects[0] as? AVMetadataMachineReadableCodeObject else {
@@ -133,8 +135,48 @@ extension QRViewController: AVCaptureMetadataOutputObjectsDelegate {
             let barCodeObject = videoPreviewLayer?.transformedMetadataObject(for: metadataObj)
             qrCodeFrameView?.frame = barCodeObject!.bounds
             
-            if metadataObj.stringValue != nil {
-//                messageLabel.text = metadataObj.stringValue
+            switch metadataObj.stringValue {
+            case "https://projectbar.page.link/1" :  let vcOne = storyboard?.instantiateViewController(identifier: "GluteatorViewController") ?? WorkOutViewController() as UIViewController
+                present(vcOne, animated: true, completion:nil)
+            case "https://projectbar.page.link/2" :  let vcOne = storyboard?.instantiateViewController(identifier: "SuperSquatViewController") ?? WorkOutViewController() as UIViewController
+                present(vcOne, animated: true, completion:nil)
+            case "https://projectbar.page.link/3" :  let vcOne = storyboard?.instantiateViewController(identifier: "StandingLegCurlViewController") ?? WorkOutViewController() as UIViewController
+                present(vcOne, animated: true, completion:nil)
+            case "https://projectbar.page.link/4" :  let vcOne = storyboard?.instantiateViewController(identifier: "LegExtensionViewController") ?? WorkOutViewController() as UIViewController
+                present(vcOne, animated: true, completion:nil)
+            case "https://projectbar.page.link/5" :  let vcOne = storyboard?.instantiateViewController(identifier: "SeatedLegCurlViewController") ?? WorkOutViewController() as UIViewController
+                present(vcOne, animated: true, completion:nil)
+            case "https://projectbar.page.link/6" :  let vcOne = storyboard?.instantiateViewController(identifier: "StandingCalfMachineViewController") ?? WorkOutViewController() as UIViewController
+                present(vcOne, animated: true, completion:nil)
+            case "https://projectbar.page.link/7" :  let vcOne = storyboard?.instantiateViewController(identifier: "HaxSquatMachineViewController") ?? WorkOutViewController() as UIViewController
+                present(vcOne, animated: true, completion:nil)
+            case "https://projectbar.page.link/8" :  let vcOne = storyboard?.instantiateViewController(identifier: "LegPressViewController") ?? WorkOutViewController() as UIViewController
+                present(vcOne, animated: true, completion:nil)
+            case "https://projectbar.page.link/9" :  let vcOne = storyboard?.instantiateViewController(identifier: "BeltSquatViewController") ?? WorkOutViewController() as UIViewController
+                present(vcOne, animated: true, completion:nil)
+            case "https://projectbar.page.link/10" :  let vcOne = storyboard?.instantiateViewController(identifier: "GluteDriveViewController") ?? WorkOutViewController() as UIViewController
+                present(vcOne, animated: true, completion:nil)
+            case "https://projectbar.page.link/11" :  let vcOne = storyboard?.instantiateViewController(identifier: "FlatBenchPressViewController") ?? WorkOutViewController() as UIViewController
+                present(vcOne, animated: true, completion:nil)
+            case "https://projectbar.page.link/12" :  let vcOne = storyboard?.instantiateViewController(identifier: "PeckDeckViewController") ?? WorkOutViewController() as UIViewController
+                present(vcOne, animated: true, completion:nil)
+            case "https://projectbar.page.link/13" :  let vcOne = storyboard?.instantiateViewController(identifier: "InclinePressViewController") ?? WorkOutViewController() as UIViewController
+                present(vcOne, animated: true, completion:nil)
+            case "https://projectbar.page.link/14" :  let vcOne = storyboard?.instantiateViewController(identifier: "IsoLaterWideChestViewController") ?? WorkOutViewController() as UIViewController
+                present(vcOne, animated: true, completion:nil)
+            case "https://projectbar.page.link/15" :  let vcOne = storyboard?.instantiateViewController(identifier: "PowerPressViewController") ?? WorkOutViewController() as UIViewController
+                present(vcOne, animated: true, completion:nil)
+            case "https://projectbar.page.link/16" :  let vcOne = storyboard?.instantiateViewController(identifier: "IsoLatLowRowViewController") ?? WorkOutViewController() as UIViewController
+                present(vcOne, animated: true, completion:nil)
+            case "https://projectbar.page.link/17" :  let vcOne = storyboard?.instantiateViewController(identifier: "ChestSupportedtbarRowViewController") ?? WorkOutViewController() as UIViewController
+                present(vcOne, animated: true, completion:nil)
+            case "https://projectbar.page.link/18" :  let vcOne = storyboard?.instantiateViewController(identifier: "IsoLatDYRowViewController") ?? WorkOutViewController() as UIViewController
+                present(vcOne, animated: true, completion:nil)
+            default: let vcOne = storyboard?.instantiateViewController(identifier: "MainMenuViewController") ?? WorkOutViewController() as UIViewController
+                present(vcOne, animated: true, completion:nil)
+            
+    
+                
                 let metadataObj = metadataObjects[0] as! AVMetadataMachineReadableCodeObject
 
                 if supportedCodeTypes.contains(metadataObj.type) {
@@ -142,13 +184,15 @@ extension QRViewController: AVCaptureMetadataOutputObjectsDelegate {
                     let barCodeObject = videoPreviewLayer?.transformedMetadataObject(for: metadataObj)
                     qrCodeFrameView?.frame = barCodeObject!.bounds
 
-                    guard let url = URL(string: metadataObj.stringValue!) else {
+                    guard let url = URL(string: "https://projectbar.page.link/Leg1") else {
                        
                         return
                             }
                         if #available(iOS 10.0, *) {
-                    performSegue(withIdentifier: "BackMuscles", sender: nil)
-                          
+                   print("leg1")
+//                            let vcOne = storyboard?.instantiateViewController(identifier: "GluteatorViewController") ?? WorkOutViewController() as UIViewController
+//                              present(vcOne, animated: true, completion:nil)
+                            
                         } else {
                            UIApplication.shared.openURL(url)
                         }
