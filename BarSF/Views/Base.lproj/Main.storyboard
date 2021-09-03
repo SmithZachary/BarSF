@@ -145,10 +145,26 @@
             </objects>
             <point key="canvasLocation" x="1046" y="-254"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cQH-Lc-ThZ">
+            <objects>
+                <navigationController id="wIL-mJ-FnP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L3x-ND-h6c">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BY9-j5-LEz" kind="relationship" relationship="rootViewController" id="KAq-eB-gcb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l0w-rw-9Ya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2163" y="-274"/>
+        </scene>
         <!--Item-->
         <scene sceneID="9yu-Bw-bDO">
             <objects>
-                <viewController id="3Ef-eE-jP9" customClass="WorkOutViewController" customModule="Bar_S_F" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3Ef-eE-jP9" customClass="WorkOutViewController" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sNU-EJ-qk4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,6 +202,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xu3-HS-k4j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1045" y="501"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="Pto-6T-iHs">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="BY9-j5-LEz" customClass="ProfileViewController" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RuY-mJ-rfR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OGz-CH-HS5">
+                                <rect key="frame" x="0.0" y="88" width="414" height="782"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sQV-nt-tSg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OGz-CH-HS5" firstAttribute="leading" secondItem="sQV-nt-tSg" secondAttribute="leading" id="PzO-XV-g1m"/>
+                            <constraint firstItem="OGz-CH-HS5" firstAttribute="trailing" secondItem="sQV-nt-tSg" secondAttribute="trailing" id="WEu-sT-0Z9"/>
+                            <constraint firstAttribute="bottom" secondItem="OGz-CH-HS5" secondAttribute="bottom" constant="26" id="spg-K7-txn"/>
+                            <constraint firstItem="OGz-CH-HS5" firstAttribute="top" secondItem="sQV-nt-tSg" secondAttribute="top" id="yqq-gB-8ek"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LPH-ZS-Cei"/>
+                    <connections>
+                        <outlet property="tableView" destination="OGz-CH-HS5" id="8Gu-Ol-spu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ozz-eK-4iP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2155.072463768116" y="487.5"/>
         </scene>
     </scenes>
     <resources>
