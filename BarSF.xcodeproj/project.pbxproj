@@ -3,19 +3,60 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		277C1B27D2ADB83E96E2587C /* Pods_BarSF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD6E4AFB58E45221AEAC383 /* Pods_BarSF.framework */; };
 		B60DA67126E1AF0400F3AE8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA67026E1AF0400F3AE8A /* AppDelegate.swift */; };
 		B60DA67326E1AF0400F3AE8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA67226E1AF0400F3AE8A /* SceneDelegate.swift */; };
 		B60DA67526E1AF0400F3AE8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA67426E1AF0400F3AE8A /* ViewController.swift */; };
 		B60DA67826E1AF0400F3AE8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60DA67626E1AF0400F3AE8A /* Main.storyboard */; };
 		B60DA67A26E1AF0600F3AE8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60DA67926E1AF0600F3AE8A /* Assets.xcassets */; };
 		B60DA67D26E1AF0600F3AE8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60DA67B26E1AF0600F3AE8A /* LaunchScreen.storyboard */; };
+		B60DA68726E1B03800F3AE8A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA68626E1B03800F3AE8A /* Extensions.swift */; };
+		B60DA68926E1B06700F3AE8A /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA68826E1B06700F3AE8A /* DatabaseManager.swift */; };
+		B60DA68B26E1B08400F3AE8A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA68A26E1B08400F3AE8A /* StorageManager.swift */; };
+		B60DA68E26E1B0CA00F3AE8A /* BarD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA68D26E1B0CA00F3AE8A /* BarD.swift */; };
+		B60DA69026E1B0E000F3AE8A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA68F26E1B0E000F3AE8A /* Colors.swift */; };
+		B60DA69226E1B0FD00F3AE8A /* ConversationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA69126E1B0FD00F3AE8A /* ConversationModel.swift */; };
+		B60DA69426E1B11000F3AE8A /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA69326E1B11000F3AE8A /* ChatModel.swift */; };
+		B60DA69626E1B12700F3AE8A /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA69526E1B12700F3AE8A /* SearchResults.swift */; };
+		B60DA69826E1B13900F3AE8A /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA69726E1B13900F3AE8A /* ProfileViewModel.swift */; };
+		B60DA69E26E1B3F000F3AE8A /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA69D26E1B3F000F3AE8A /* SwipeViewController.swift */; };
+		B60DA6A026E1B40C00F3AE8A /* EZSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA69F26E1B40C00F3AE8A /* EZSwipeViewController.swift */; };
+		B60DA6A326E1B44600F3AE8A /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6A226E1B44600F3AE8A /* WorkoutViewController.swift */; };
+		B60DA6A626E1B4BF00F3AE8A /* ConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6A526E1B4BF00F3AE8A /* ConversationTableViewCell.swift */; };
+		B60DA6A826E1B4E600F3AE8A /* NewConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6A726E1B4E600F3AE8A /* NewConversationCell.swift */; };
+		B60DA6AA26E1B50700F3AE8A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B60DA6A926E1B50700F3AE8A /* GoogleService-Info.plist */; };
+		B60DA6AE26E1B55E00F3AE8A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6AD26E1B55E00F3AE8A /* LoginViewController.swift */; };
+		B60DA6B026E1B58400F3AE8A /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6AF26E1B58400F3AE8A /* ForgotPassViewController.swift */; };
+		B60DA6B226E1B5A300F3AE8A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6B126E1B5A300F3AE8A /* RegisterViewController.swift */; };
+		B60DA6B526E1B5D200F3AE8A /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6B426E1B5D200F3AE8A /* MainMenuViewController.swift */; };
+		B60DA6B726E1B5F100F3AE8A /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6B626E1B5F100F3AE8A /* QRViewController.swift */; };
+		B60DA6BA26E1B62E00F3AE8A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6B926E1B62E00F3AE8A /* ChatViewController.swift */; };
+		B60DA6BC26E1B64800F3AE8A /* LocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6BB26E1B64800F3AE8A /* LocationPickerViewController.swift */; };
+		B60DA6BE26E1B66000F3AE8A /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6BD26E1B66000F3AE8A /* NewConversationViewController.swift */; };
+		B60DA6C026E1B67700F3AE8A /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6BF26E1B67700F3AE8A /* ConversationsViewController.swift */; };
+		B60DA6C226E1B6A200F3AE8A /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6C126E1B6A200F3AE8A /* PhotoViewerViewController.swift */; };
+		B60DA6C426E1B6B900F3AE8A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6C326E1B6B900F3AE8A /* ProfileViewController.swift */; };
+		B60DA6C726E266FE00F3AE8A /* GluteatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6C626E266FE00F3AE8A /* GluteatorViewController.swift */; };
+		B60DA6C926E267A600F3AE8A /* SuperSquatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6C826E267A600F3AE8A /* SuperSquatViewController.swift */; };
+		B60DA6CB26E267D400F3AE8A /* StandingLegCurlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6CA26E267D400F3AE8A /* StandingLegCurlViewController.swift */; };
+		B60DA6CD26E267F800F3AE8A /* LegExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6CC26E267F800F3AE8A /* LegExtensionViewController.swift */; };
+		B60DA6CF26E2685100F3AE8A /* LyingLegExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6CE26E2685100F3AE8A /* LyingLegExtensionViewController.swift */; };
+		B60DA6D126E2687300F3AE8A /* SeatedLegCurlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6D026E2687200F3AE8A /* SeatedLegCurlViewController.swift */; };
+		B60DA6D326E268B600F3AE8A /* StandingCalfMachineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6D226E268B600F3AE8A /* StandingCalfMachineViewController.swift */; };
+		B60DA6D526E2691F00F3AE8A /* HaxSquatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6D426E2691F00F3AE8A /* HaxSquatViewController.swift */; };
+		B60DA6D726E2695100F3AE8A /* LegPressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6D626E2695100F3AE8A /* LegPressViewController.swift */; };
+		B60DA6D926E2698800F3AE8A /* BeltSquatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6D826E2698800F3AE8A /* BeltSquatViewController.swift */; };
+		B60DA6DB26E269A900F3AE8A /* GluteDriveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6DA26E269A900F3AE8A /* GluteDriveViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AD6E4AFB58E45221AEAC383 /* Pods_BarSF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarSF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26B6E6C028D1DD6313899507 /* Pods-BarSF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarSF.release.xcconfig"; path = "Target Support Files/Pods-BarSF/Pods-BarSF.release.xcconfig"; sourceTree = "<group>"; };
+		8460462BD3A4610844028799 /* Pods-BarSF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarSF.debug.xcconfig"; path = "Target Support Files/Pods-BarSF/Pods-BarSF.debug.xcconfig"; sourceTree = "<group>"; };
 		B60DA66D26E1AF0400F3AE8A /* BarSF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarSF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60DA67026E1AF0400F3AE8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B60DA67226E1AF0400F3AE8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +65,45 @@
 		B60DA67926E1AF0600F3AE8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B60DA67C26E1AF0600F3AE8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B60DA67E26E1AF0600F3AE8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B60DA68426E1AF3800F3AE8A /* BarSF.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BarSF.entitlements; sourceTree = "<group>"; };
+		B60DA68626E1B03800F3AE8A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B60DA68826E1B06700F3AE8A /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		B60DA68A26E1B08400F3AE8A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		B60DA68D26E1B0CA00F3AE8A /* BarD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarD.swift; sourceTree = "<group>"; };
+		B60DA68F26E1B0E000F3AE8A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B60DA69126E1B0FD00F3AE8A /* ConversationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationModel.swift; sourceTree = "<group>"; };
+		B60DA69326E1B11000F3AE8A /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		B60DA69526E1B12700F3AE8A /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		B60DA69726E1B13900F3AE8A /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		B60DA69A26E1B3AA00F3AE8A /* EZSwipController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZSwipController.h; sourceTree = "<group>"; };
+		B60DA69D26E1B3F000F3AE8A /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
+		B60DA69F26E1B40C00F3AE8A /* EZSwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZSwipeViewController.swift; sourceTree = "<group>"; };
+		B60DA6A226E1B44600F3AE8A /* WorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
+		B60DA6A526E1B4BF00F3AE8A /* ConversationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTableViewCell.swift; sourceTree = "<group>"; };
+		B60DA6A726E1B4E600F3AE8A /* NewConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationCell.swift; sourceTree = "<group>"; };
+		B60DA6A926E1B50700F3AE8A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B60DA6AD26E1B55E00F3AE8A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B60DA6AF26E1B58400F3AE8A /* ForgotPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
+		B60DA6B126E1B5A300F3AE8A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B60DA6B426E1B5D200F3AE8A /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		B60DA6B626E1B5F100F3AE8A /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		B60DA6B926E1B62E00F3AE8A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B60DA6BB26E1B64800F3AE8A /* LocationPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerViewController.swift; sourceTree = "<group>"; };
+		B60DA6BD26E1B66000F3AE8A /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
+		B60DA6BF26E1B67700F3AE8A /* ConversationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		B60DA6C126E1B6A200F3AE8A /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
+		B60DA6C326E1B6B900F3AE8A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B60DA6C626E266FE00F3AE8A /* GluteatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GluteatorViewController.swift; sourceTree = "<group>"; };
+		B60DA6C826E267A600F3AE8A /* SuperSquatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSquatViewController.swift; sourceTree = "<group>"; };
+		B60DA6CA26E267D400F3AE8A /* StandingLegCurlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingLegCurlViewController.swift; sourceTree = "<group>"; };
+		B60DA6CC26E267F800F3AE8A /* LegExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegExtensionViewController.swift; sourceTree = "<group>"; };
+		B60DA6CE26E2685100F3AE8A /* LyingLegExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyingLegExtensionViewController.swift; sourceTree = "<group>"; };
+		B60DA6D026E2687200F3AE8A /* SeatedLegCurlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatedLegCurlViewController.swift; sourceTree = "<group>"; };
+		B60DA6D226E268B600F3AE8A /* StandingCalfMachineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingCalfMachineViewController.swift; sourceTree = "<group>"; };
+		B60DA6D426E2691F00F3AE8A /* HaxSquatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaxSquatViewController.swift; sourceTree = "<group>"; };
+		B60DA6D626E2695100F3AE8A /* LegPressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegPressViewController.swift; sourceTree = "<group>"; };
+		B60DA6D826E2698800F3AE8A /* BeltSquatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeltSquatViewController.swift; sourceTree = "<group>"; };
+		B60DA6DA26E269A900F3AE8A /* GluteDriveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GluteDriveViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +111,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				277C1B27D2ADB83E96E2587C /* Pods_BarSF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		329502F34C7113A90D9AD132 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AD6E4AFB58E45221AEAC383 /* Pods_BarSF.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54366A01F8B7594451AB4890 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8460462BD3A4610844028799 /* Pods-BarSF.debug.xcconfig */,
+				26B6E6C028D1DD6313899507 /* Pods-BarSF.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B60DA66426E1AF0400F3AE8A = {
 			isa = PBXGroup;
 			children = (
 				B60DA66F26E1AF0400F3AE8A /* BarSF */,
 				B60DA66E26E1AF0400F3AE8A /* Products */,
+				54366A01F8B7594451AB4890 /* Pods */,
+				329502F34C7113A90D9AD132 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +156,142 @@
 		B60DA66F26E1AF0400F3AE8A /* BarSF */ = {
 			isa = PBXGroup;
 			children = (
-				B60DA67026E1AF0400F3AE8A /* AppDelegate.swift */,
-				B60DA67226E1AF0400F3AE8A /* SceneDelegate.swift */,
+				B60DA6AB26E1B53400F3AE8A /* ViewControllers */,
+				B60DA6A426E1B46900F3AE8A /* Views */,
+				B60DA69B26E1B3BF00F3AE8A /* Trainers */,
+				B60DA68526E1B02700F3AE8A /* Resources */,
+				B60DA68C26E1B0A200F3AE8A /* Models */,
+				B60DA68426E1AF3800F3AE8A /* BarSF.entitlements */,
 				B60DA67426E1AF0400F3AE8A /* ViewController.swift */,
-				B60DA67626E1AF0400F3AE8A /* Main.storyboard */,
-				B60DA67926E1AF0600F3AE8A /* Assets.xcassets */,
-				B60DA67B26E1AF0600F3AE8A /* LaunchScreen.storyboard */,
 				B60DA67E26E1AF0600F3AE8A /* Info.plist */,
+				B60DA6A926E1B50700F3AE8A /* GoogleService-Info.plist */,
 			);
 			path = BarSF;
+			sourceTree = "<group>";
+		};
+		B60DA68526E1B02700F3AE8A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B60DA67026E1AF0400F3AE8A /* AppDelegate.swift */,
+				B60DA67226E1AF0400F3AE8A /* SceneDelegate.swift */,
+				B60DA68626E1B03800F3AE8A /* Extensions.swift */,
+				B60DA68826E1B06700F3AE8A /* DatabaseManager.swift */,
+				B60DA68A26E1B08400F3AE8A /* StorageManager.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B60DA68C26E1B0A200F3AE8A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B60DA68D26E1B0CA00F3AE8A /* BarD.swift */,
+				B60DA68F26E1B0E000F3AE8A /* Colors.swift */,
+				B60DA69126E1B0FD00F3AE8A /* ConversationModel.swift */,
+				B60DA69326E1B11000F3AE8A /* ChatModel.swift */,
+				B60DA69526E1B12700F3AE8A /* SearchResults.swift */,
+				B60DA69726E1B13900F3AE8A /* ProfileViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B60DA69926E1B32A00F3AE8A /* Carthage Framework */ = {
+			isa = PBXGroup;
+			children = (
+				B60DA69A26E1B3AA00F3AE8A /* EZSwipController.h */,
+			);
+			path = "Carthage Framework";
+			sourceTree = "<group>";
+		};
+		B60DA69B26E1B3BF00F3AE8A /* Trainers */ = {
+			isa = PBXGroup;
+			children = (
+				B60DA69926E1B32A00F3AE8A /* Carthage Framework */,
+				B60DA69D26E1B3F000F3AE8A /* SwipeViewController.swift */,
+				B60DA69F26E1B40C00F3AE8A /* EZSwipeViewController.swift */,
+			);
+			path = Trainers;
+			sourceTree = "<group>";
+		};
+		B60DA6A126E1B42400F3AE8A /* Workouts */ = {
+			isa = PBXGroup;
+			children = (
+				B60DA6C526E266E400F3AE8A /* Legs */,
+				B60DA6A226E1B44600F3AE8A /* WorkoutViewController.swift */,
+			);
+			path = Workouts;
+			sourceTree = "<group>";
+		};
+		B60DA6A426E1B46900F3AE8A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B60DA67B26E1AF0600F3AE8A /* LaunchScreen.storyboard */,
+				B60DA67626E1AF0400F3AE8A /* Main.storyboard */,
+				B60DA6A526E1B4BF00F3AE8A /* ConversationTableViewCell.swift */,
+				B60DA6A726E1B4E600F3AE8A /* NewConversationCell.swift */,
+				B60DA67926E1AF0600F3AE8A /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B60DA6AB26E1B53400F3AE8A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B60DA6A126E1B42400F3AE8A /* Workouts */,
+				B60DA6B826E1B62000F3AE8A /* ChatControllers */,
+				B60DA6B326E1B5C100F3AE8A /* TabViewControllers */,
+				B60DA6AC26E1B54800F3AE8A /* Login */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B60DA6AC26E1B54800F3AE8A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B60DA6AD26E1B55E00F3AE8A /* LoginViewController.swift */,
+				B60DA6AF26E1B58400F3AE8A /* ForgotPassViewController.swift */,
+				B60DA6B126E1B5A300F3AE8A /* RegisterViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B60DA6B326E1B5C100F3AE8A /* TabViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B60DA6B426E1B5D200F3AE8A /* MainMenuViewController.swift */,
+				B60DA6B626E1B5F100F3AE8A /* QRViewController.swift */,
+			);
+			path = TabViewControllers;
+			sourceTree = "<group>";
+		};
+		B60DA6B826E1B62000F3AE8A /* ChatControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B60DA6B926E1B62E00F3AE8A /* ChatViewController.swift */,
+				B60DA6C126E1B6A200F3AE8A /* PhotoViewerViewController.swift */,
+				B60DA6BB26E1B64800F3AE8A /* LocationPickerViewController.swift */,
+				B60DA6BD26E1B66000F3AE8A /* NewConversationViewController.swift */,
+				B60DA6BF26E1B67700F3AE8A /* ConversationsViewController.swift */,
+				B60DA6C326E1B6B900F3AE8A /* ProfileViewController.swift */,
+			);
+			path = ChatControllers;
+			sourceTree = "<group>";
+		};
+		B60DA6C526E266E400F3AE8A /* Legs */ = {
+			isa = PBXGroup;
+			children = (
+				B60DA6C626E266FE00F3AE8A /* GluteatorViewController.swift */,
+				B60DA6C826E267A600F3AE8A /* SuperSquatViewController.swift */,
+				B60DA6CA26E267D400F3AE8A /* StandingLegCurlViewController.swift */,
+				B60DA6CC26E267F800F3AE8A /* LegExtensionViewController.swift */,
+				B60DA6CE26E2685100F3AE8A /* LyingLegExtensionViewController.swift */,
+				B60DA6D026E2687200F3AE8A /* SeatedLegCurlViewController.swift */,
+				B60DA6D226E268B600F3AE8A /* StandingCalfMachineViewController.swift */,
+				B60DA6D426E2691F00F3AE8A /* HaxSquatViewController.swift */,
+				B60DA6D626E2695100F3AE8A /* LegPressViewController.swift */,
+				B60DA6D826E2698800F3AE8A /* BeltSquatViewController.swift */,
+				B60DA6DA26E269A900F3AE8A /* GluteDriveViewController.swift */,
+			);
+			path = Legs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +301,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B60DA68126E1AF0600F3AE8A /* Build configuration list for PBXNativeTarget "BarSF" */;
 			buildPhases = (
+				9204508D74B659EBE5DD3F8F /* [CP] Check Pods Manifest.lock */,
 				B60DA66926E1AF0400F3AE8A /* Sources */,
 				B60DA66A26E1AF0400F3AE8A /* Frameworks */,
 				B60DA66B26E1AF0400F3AE8A /* Resources */,
+				FDD8DE548B2E19D98127101B /* [CP] Embed Pods Frameworks */,
+				06D8F6E0D489B1FC4BA82A9F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -95,6 +325,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = spaceMuleCode;
 				TargetAttributes = {
 					B60DA66C26E1AF0400F3AE8A = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -125,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B60DA67D26E1AF0600F3AE8A /* LaunchScreen.storyboard in Resources */,
+				B60DA6AA26E1B50700F3AE8A /* GoogleService-Info.plist in Resources */,
 				B60DA67A26E1AF0600F3AE8A /* Assets.xcassets in Resources */,
 				B60DA67826E1AF0400F3AE8A /* Main.storyboard in Resources */,
 			);
@@ -132,14 +364,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06D8F6E0D489B1FC4BA82A9F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarSF/Pods-BarSF-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarSF/Pods-BarSF-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BarSF/Pods-BarSF-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9204508D74B659EBE5DD3F8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarSF-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDD8DE548B2E19D98127101B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarSF/Pods-BarSF-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarSF/Pods-BarSF-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BarSF/Pods-BarSF-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B60DA66926E1AF0400F3AE8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B60DA6AE26E1B55E00F3AE8A /* LoginViewController.swift in Sources */,
+				B60DA6CB26E267D400F3AE8A /* StandingLegCurlViewController.swift in Sources */,
+				B60DA6A026E1B40C00F3AE8A /* EZSwipeViewController.swift in Sources */,
+				B60DA69626E1B12700F3AE8A /* SearchResults.swift in Sources */,
+				B60DA68E26E1B0CA00F3AE8A /* BarD.swift in Sources */,
+				B60DA69026E1B0E000F3AE8A /* Colors.swift in Sources */,
+				B60DA6D926E2698800F3AE8A /* BeltSquatViewController.swift in Sources */,
+				B60DA6B726E1B5F100F3AE8A /* QRViewController.swift in Sources */,
 				B60DA67526E1AF0400F3AE8A /* ViewController.swift in Sources */,
+				B60DA6BC26E1B64800F3AE8A /* LocationPickerViewController.swift in Sources */,
+				B60DA6C226E1B6A200F3AE8A /* PhotoViewerViewController.swift in Sources */,
+				B60DA6B026E1B58400F3AE8A /* ForgotPassViewController.swift in Sources */,
+				B60DA6D326E268B600F3AE8A /* StandingCalfMachineViewController.swift in Sources */,
 				B60DA67126E1AF0400F3AE8A /* AppDelegate.swift in Sources */,
+				B60DA6D526E2691F00F3AE8A /* HaxSquatViewController.swift in Sources */,
+				B60DA68926E1B06700F3AE8A /* DatabaseManager.swift in Sources */,
+				B60DA69826E1B13900F3AE8A /* ProfileViewModel.swift in Sources */,
+				B60DA6A626E1B4BF00F3AE8A /* ConversationTableViewCell.swift in Sources */,
+				B60DA6BE26E1B66000F3AE8A /* NewConversationViewController.swift in Sources */,
+				B60DA6B226E1B5A300F3AE8A /* RegisterViewController.swift in Sources */,
+				B60DA69426E1B11000F3AE8A /* ChatModel.swift in Sources */,
+				B60DA68B26E1B08400F3AE8A /* StorageManager.swift in Sources */,
+				B60DA6C426E1B6B900F3AE8A /* ProfileViewController.swift in Sources */,
 				B60DA67326E1AF0400F3AE8A /* SceneDelegate.swift in Sources */,
+				B60DA6C726E266FE00F3AE8A /* GluteatorViewController.swift in Sources */,
+				B60DA6BA26E1B62E00F3AE8A /* ChatViewController.swift in Sources */,
+				B60DA69E26E1B3F000F3AE8A /* SwipeViewController.swift in Sources */,
+				B60DA6C926E267A600F3AE8A /* SuperSquatViewController.swift in Sources */,
+				B60DA6A326E1B44600F3AE8A /* WorkoutViewController.swift in Sources */,
+				B60DA69226E1B0FD00F3AE8A /* ConversationModel.swift in Sources */,
+				B60DA6D126E2687300F3AE8A /* SeatedLegCurlViewController.swift in Sources */,
+				B60DA6DB26E269A900F3AE8A /* GluteDriveViewController.swift in Sources */,
+				B60DA6D726E2695100F3AE8A /* LegPressViewController.swift in Sources */,
+				B60DA6B526E1B5D200F3AE8A /* MainMenuViewController.swift in Sources */,
+				B60DA68726E1B03800F3AE8A /* Extensions.swift in Sources */,
+				B60DA6A826E1B4E600F3AE8A /* NewConversationCell.swift in Sources */,
+				B60DA6CF26E2685100F3AE8A /* LyingLegExtensionViewController.swift in Sources */,
+				B60DA6CD26E267F800F3AE8A /* LegExtensionViewController.swift in Sources */,
+				B60DA6C026E1B67700F3AE8A /* ConversationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +610,15 @@
 		};
 		B60DA68226E1AF0600F3AE8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8460462BD3A4610844028799 /* Pods-BarSF.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BarSF/BarSF.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3MSCVD9F92;
 				INFOPLIST_FILE = BarSF/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +626,21 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.spaceMuleTech.BarSF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B60DA68326E1AF0600F3AE8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26B6E6C028D1DD6313899507 /* Pods-BarSF.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BarSF/BarSF.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3MSCVD9F92;
 				INFOPLIST_FILE = BarSF/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +648,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.spaceMuleTech.BarSF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
