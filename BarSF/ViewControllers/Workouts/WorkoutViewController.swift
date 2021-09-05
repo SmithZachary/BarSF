@@ -67,199 +67,273 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
     
     private let flatBenchPressButton: UIButton = {
         let button = UIButton()
+        
         button.setTitle("Flat Bench Press", for: .normal)
-        button.addGoldGradient()
+       button.addsack(pic: "bench")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
+        button.layer.cornerRadius = 10
         button.layer.masksToBounds = true
         button.addTarget(self, action: #selector(flatDidPress), for: .touchUpInside)
         button.isUserInteractionEnabled = true
         button.showsTouchWhenHighlighted = true
-      
-        button.layer.cornerRadius = 0
-        button.setTitleColor(.white, for: .normal)
-        button.layer.shadowColor = .init(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-        button.layer.shadowOffset = CGSize(width: 0, height: 1)
+        button.setTitleColor(.black, for: .normal)
+        
+        button.backgroundColor = .white
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.setTitleColor(.black, for: .normal)
+        button.layer.shadowColor = UIColor.white.cgColor
+        button.layer.shadowOffset = CGSize(width: 1.0,height: 1.0)
+        
+     
+       
+        button.layer.shadowOpacity = 1.0
+        button.reversesTitleShadowWhenHighlighted = true
         return button
     }()
     private let peckDeckButton: UIButton = {
         let button = UIButton()
         button.setTitle("Peck Deck", for: .normal)
         button.addTarget(self, action: #selector(didTapPeck), for: .touchUpInside)
-        button.addGoldGradient()
+        button.addsack(pic: "peckdec")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.masksToBounds = true
-    
+        button.setTitleColor(.black, for: .normal)
         button.isUserInteractionEnabled = true
         button.showsTouchWhenHighlighted = true
-     
-        button.layer.cornerRadius = 0
-        button.setTitleColor(.white, for: .normal)
-        button.layer.shadowColor = .init(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-        button.layer.shadowOffset = CGSize(width: 0, height: 1)
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.cornerRadius = 10
+        button.backgroundColor = .white
+       
         return button
     }()
     private let inclinePressButton: UIButton = {
         let button = UIButton()
         button.setTitle("Incline Press", for: .normal)
         button.addTarget(self, action: #selector(didTapInclinePress), for: .touchUpInside)
-        button.addGoldGradient()
         button.layer.masksToBounds = true
-    
+        button.addsack(pic: "inclinepress")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.isUserInteractionEnabled = true
         button.showsTouchWhenHighlighted = true
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.cornerRadius = 10
+        button.backgroundColor = .white
+        button.setTitleColor(.black, for: .normal)
       
-        button.layer.cornerRadius = 0
-        button.setTitleColor(.white, for: .normal)
-        button.layer.shadowColor = .init(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-        button.layer.shadowOffset = CGSize(width: 0, height: 1)
         return button
     }()
     private let isoLateralWidePressPressButton: UIButton = {
         let button = UIButton()
         button.setTitle("Iso Lateral Chest Press", for: .normal)
         button.addTarget(self, action: #selector(didTapIsoLat), for: .touchUpInside)
-        button.addGoldGradient()
+        button.addsack(pic: "widechest")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.masksToBounds = true
         button.isUserInteractionEnabled = true
         button.showsTouchWhenHighlighted = true
-      
-        button.layer.cornerRadius = 0
-        button.setTitleColor(.white, for: .normal)
-        button.layer.shadowColor = .init(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-        button.layer.shadowOffset = CGSize(width: 0, height: 1)
+        button.setTitleColor(.black, for: .normal)
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.cornerRadius = 10
+        button.backgroundColor = .white
+        button.contentHorizontalAlignment = .right
+        
         return button
     }()
     private let powerPressButton: UIButton = {
         let button = UIButton()
         button.setTitle("Power Press", for: .normal)
         button.addTarget(self, action: #selector(didTapPowerPress), for: .touchUpInside)
-        button.addGoldGradient()
+        button.addsack(pic: "incline")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.masksToBounds = true
         button.isUserInteractionEnabled = true
         button.showsTouchWhenHighlighted = true
-  
-        button.layer.cornerRadius = 0
-        button.setTitleColor(.white, for: .normal)
-        button.layer.shadowColor = .init(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-        button.layer.shadowOffset = CGSize(width: 0, height: 1)
+        button.setTitleColor(.black, for: .normal)
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.cornerRadius = 10
+        button.backgroundColor = .white
+        button.contentHorizontalAlignment = .right
+       
         return button
     }()
     private let gluteDriveButton: UIButton = {
         let button = UIButton()
         button.setTitle("Glute /n Drive", for: .normal)
         button.addTarget(self, action: #selector(didTapGluteDrive), for: .touchUpInside)
-         button.addGoldGradient()
+        button.addsack(pic: "glutedrive")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.masksToBounds = true
         button.showsTouchWhenHighlighted = true
         button.isUserInteractionEnabled = true
-      
-        button.layer.cornerRadius = 0
-        button.setTitleColor(.white, for: .normal)
-        button.layer.shadowColor = .init(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-        button.layer.shadowOffset = CGSize(width: 0, height: 1)
+        button.setTitleColor(.black, for: .normal)
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.cornerRadius = 10
+        button.backgroundColor = .white
+        button.contentHorizontalAlignment = .right
+        
         return button
     }()
     private let beltSquatButton: UIButton = {
         let button = UIButton()
         button.setTitle("Belt Squat", for: .normal)
         button.addTarget(self, action: #selector(didTapBelt), for: .touchUpInside)
-         button.addGoldGradient()
+           button.addsack(pic: "beltsquat")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.masksToBounds = true
         button.showsTouchWhenHighlighted = true
         button.isUserInteractionEnabled = true
-    
-        button.layer.cornerRadius = 0
-        button.setTitleColor(.white, for: .normal)
-        button.layer.shadowColor = .init(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-        button.layer.shadowOffset = CGSize(width: 0, height: 1)
+        button.setTitleColor(.black, for: .normal)
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.cornerRadius = 10
+        button.backgroundColor = .white
+        
         return button
     }()
     private let legPressButton: UIButton = {
         let button = UIButton()
         button.setTitle("Leg Press", for: .normal)
         button.addTarget(self, action: #selector(didTapLegPress), for: .touchUpInside)
-         button.addGoldGradient()
+           button.addsack(pic: "legpress")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.masksToBounds = true
         button.showsTouchWhenHighlighted = true
         button.isUserInteractionEnabled = true
-     
-        button.layer.cornerRadius = 0
-        button.setTitleColor(.white, for: .normal)
-        button.layer.shadowColor = .init(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-        button.layer.shadowOffset = CGSize(width: 0, height: 1)
+        button.setTitleColor(.black, for: .normal)
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.cornerRadius = 10
+        button.backgroundColor = .white
+       
         return button
     }()
     private let haxSquatButton: UIButton = {
         let button = UIButton()
         button.setTitle("Hax Squat", for: .normal)
         button.addTarget(self, action: #selector(didTapHax), for: .touchUpInside)
-         button.addGoldGradient()
+           button.addsack(pic: "hax")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.masksToBounds = true
         button.showsTouchWhenHighlighted = true
         button.isUserInteractionEnabled = true
-    
-        button.layer.cornerRadius = 0
-        button.setTitleColor(.white, for: .normal)
-        button.layer.shadowColor = .init(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-        button.layer.shadowOffset = CGSize(width: 0, height: 1)
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.cornerRadius = 10
+        button.backgroundColor = .white
+        button.setTitleColor(.black, for: .normal)
         return button
     }()
     private let standingCalfMachineButton: UIButton = {
         let button = UIButton()
         button.setTitle("Calf Machine", for: .normal)
         button.addTarget(self, action: #selector(didTapCalf), for: .touchUpInside)
-         button.addGoldGradient()
+           button.addsack(pic: "standingcalf")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.masksToBounds = true
         button.showsTouchWhenHighlighted = true
         button.isUserInteractionEnabled = true
-      
-        button.layer.cornerRadius = 0
-        button.setTitleColor(.white, for: .normal)
-        button.layer.shadowColor = .init(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-        button.layer.shadowOffset = CGSize(width: 0, height: 1)
+        button.setTitleColor(.black, for: .normal)
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.cornerRadius = 10
+        button.backgroundColor = .white
+        
         return button
     }()
     private let seatedLegCurlPressButton: UIButton = {
         let button = UIButton()
         button.setTitle("Seated Leg Curl", for: .normal)
         button.addTarget(self, action: #selector(didTapLegCurl), for: .touchUpInside)
-         button.addGoldGradient()
+           button.addsack(pic: "seatedlegcurl")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.masksToBounds = true
         button.showsTouchWhenHighlighted = true
         button.isUserInteractionEnabled = true
+        button.setTitleColor(.black, for: .normal)
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.cornerRadius = 10
+        button.backgroundColor = .white
        
-        button.layer.cornerRadius = 0
-        button.setTitleColor(.white, for: .normal)
-        button.layer.shadowColor = .init(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-        button.layer.shadowOffset = CGSize(width: 0, height: 1)
         return button
     }()
     private let lyingLegCurlPressButton: UIButton = {
         let button = UIButton()
         button.setTitle("Lying Leg Curl", for: .normal)
         button.addTarget(self, action: #selector(didTapLyingLeg), for: .touchUpInside)
-         button.addGoldGradient()
+           button.addsack(pic: "lyingleg")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.masksToBounds = true
         button.showsTouchWhenHighlighted = true
         button.isUserInteractionEnabled = true
-   
-        button.layer.cornerRadius = 0
-        button.setTitleColor(.white, for: .normal)
-        button.layer.shadowColor = .init(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-        button.layer.shadowOffset = CGSize(width: 0, height: 1)
+        button.setTitleColor(.black, for: .normal)
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.cornerRadius = 10
+        button.backgroundColor = .white
+        
         return button
     }()
     private let legExtensionPressButton: UIButton = {
         let button = UIButton()
         button.setTitle("Leg Extension", for: .normal)
         button.addTarget(self, action: #selector(didTapLegEx), for: .touchUpInside)
-         button.addGoldGradient()
+           button.addsack(pic: "legextension")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.masksToBounds = true
         button.showsTouchWhenHighlighted = true
         button.isUserInteractionEnabled = true
-     
-        button.layer.cornerRadius = 0
-        button.setTitleColor(.white, for: .normal)
-        button.layer.shadowColor = .init(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-        button.layer.shadowOffset = CGSize(width: 0, height: 1)
+        button.setTitleColor(.black, for: .normal)
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.cornerRadius = 10
+        button.backgroundColor = .white
+       
         return button
     }()
     private let inverseCurlButton: UIButton = {
@@ -267,22 +341,26 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.setTitle("Inverse \n Curl", for: .normal)
         button.addTarget(self, action: #selector(didTapInverse), for: .touchUpInside)
         button.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
-         button.addGoldGradient()
+        button.addsack(pic: "inverse")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.masksToBounds = true
         button.layer.borderColor = UIColor.white.cgColor
         button.showsTouchWhenHighlighted = true
         button.isUserInteractionEnabled = true
-   
+        button.setTitleColor(.black, for: .normal)
         
         button.isUserInteractionEnabled = true
         button.isHighlighted = false
         button.showsTouchWhenHighlighted = true
         button.titleLabel?.textAlignment = .center
-        
-        button.layer.cornerRadius = 0
-        button.setTitleColor(.white, for: .normal)
-        button.layer.shadowColor = .init(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-        button.layer.shadowOffset = CGSize(width: 0, height: 1)
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.cornerRadius = 10
+        button.backgroundColor = .white
+       
         return button
     }()
     private let gluteatorButton: UIButton = {
@@ -291,13 +369,18 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.addTarget(self, action: #selector(didTapGlute), for: .touchUpInside)
         button.showsTouchWhenHighlighted = true
         button.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
-         button.addGoldGradient()
+           button.addsack(pic: "gluteator")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.masksToBounds = true
-       
-        button.layer.cornerRadius = 0
-        button.setTitleColor(.white, for: .normal)
-        button.layer.shadowColor = .init(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-        button.layer.shadowOffset = CGSize(width: 0, height: 1)
+        button.setTitleColor(.black, for: .normal)
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.cornerRadius = 10
+        button.backgroundColor = .white
+   
         return button
     }()
     private let superSquatPressButton: UIButton = {
@@ -308,11 +391,18 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.setTitle("Super Squat", for: .normal)
         button.addTarget(self, action: #selector(didTapSuper), for: .touchUpInside)
         button.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
-         button.addGoldGradient()
+           button.addsack(pic: "incline")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.masksToBounds = true
-        
-        button.layer.cornerRadius = 0
-        button.setTitleColor(.white, for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.cornerRadius = 10
+        button.backgroundColor = .white
+    
        
         return button
     }()
@@ -323,12 +413,17 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.setTitle("Standing \n Leg Curl", for: .normal)
         button.addTarget(self, action: #selector(didTapStandingCurl), for: .touchUpInside)
         button.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
-         button.addGoldGradient()
+        button.addsack(pic: "incline")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.masksToBounds = true
-       
-        button.layer.cornerRadius = 0
-        button.setTitleColor(.white, for: .normal)
-       
+        button.setTitleColor(.black, for: .normal)
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.cornerRadius = 10
+        button.backgroundColor = .white
         return button
     }()
     
@@ -341,27 +436,44 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.setTitle("Iso-Lateral \n Low Row", for: .normal)
         button.addTarget(self, action: #selector(didTapIsoLatLow), for: .touchUpInside)
         button.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
-        button.addGoldGradient()
-      
+        button.addsack(pic: "lowrow")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
+        button.setTitleColor(.black, for: .normal)
         button.showsTouchWhenHighlighted = true
-        button.layer.cornerRadius = 0
-        button.setTitleColor(.white, for: .normal)
+        button.layer.cornerRadius = 10
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.backgroundColor = .white
       
         
         return button
     }()
     private let ChestSupportedRow: UIButton = {
         let button = UIButton()
-        button.addGoldGradient()
+          button.addsack(pic: "chestsupport")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.isUserInteractionEnabled = true
         button.isHighlighted = false
         button.setTitle("Chest Supported \n Row", for: .normal)
         button.addTarget(self, action: #selector(didTapChestRow), for: .touchUpInside)
         button.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
-        button.addGoldGradient()
-       
-        button.layer.cornerRadius = 0
-        button.setTitleColor(.white, for: .normal)
+          button.addsack(pic: "incline")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
+        button.setTitleColor(.black, for: .normal)
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.cornerRadius = 10
+        button.backgroundColor = .white
+     
        
         button.layer.masksToBounds = true
        
@@ -370,19 +482,24 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
 
     private let IsoLatDYRow: UIButton = {
         let button = UIButton()
-        button.addGoldGradient()
-      
         button.isUserInteractionEnabled = true
         button.isHighlighted = false
         button.setTitle("Iso Lat \n D.Y. Row", for: .normal)
         button.addTarget(self, action: #selector(didTapDYRow), for: .touchUpInside)
         button.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
-        button.addGoldGradient()
-      
-        
+          button.addsack(pic: "dy")
+        button.contentHorizontalAlignment = .right
+        button.contentVerticalAlignment = .top
+        button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
+        button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.masksToBounds = true
-        button.layer.cornerRadius = 0
-        button.setTitleColor(.white, for: .normal)
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.cornerRadius = 10
+        button.backgroundColor = .white
+        button.setTitleColor(.black, for: .normal)
+  
+     
        
         return button
     }()
@@ -402,8 +519,9 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         view.addBackground()
-        view.backgroundColor = .systemBackground
+        
    
         
     
@@ -435,7 +553,6 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
 
         legScrollVIew.contentSize = CGSize(width: 1600, height: 100)
         backScrollVIew.contentSize = CGSize(width:400, height: 100)
-        
         scrollView.contentInset = UIEdgeInsets(top: -50, left: 0.0, bottom: 0.0, right: 0.0)//        chest buttons
         
       
@@ -478,7 +595,8 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         )
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {
             action in
-                 // Called when user taps outside
+            
+                
         }))
 
         alert.addAction(
@@ -491,6 +609,15 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
 
         alert.addAction(
             .init(title: "Trainers", style: .default) { _ in
+                let vc = MySwipeVC()
+                self.navigationController?.pushViewController(vc, animated: true)
+                
+            }
+        )
+        alert.addAction(
+            .init(title: "About", style: .default) { _ in
+                let vc = spaceMuleCodeViewController()
+                self.navigationController?.pushViewController(vc, animated: true)
                 
             }
         )

@@ -32,6 +32,9 @@ final class ProfileViewController: UIViewController {
         data.append(ProfileViewModel(viewModelType: .info,
                                      title: "",
                                      handler: nil))
+        data.append(ProfileViewModel(viewModelType: .info,
+                                     title: "",
+                                     handler: nil))
      
         
         
@@ -75,6 +78,52 @@ final class ProfileViewController: UIViewController {
                                             }
 
             }))
+            
+
+            actionSheet.addAction(UIAlertAction(title: "Cancel",
+                                                style: .cancel,
+                                                handler: nil))
+
+            strongSelf.present(actionSheet, animated: true)
+        }))
+        data.append(ProfileViewModel(viewModelType: .info,
+                                     title: "",
+                                     handler: nil))
+        data.append(ProfileViewModel(viewModelType: .info,
+                                     title: "",
+                                     handler: nil))
+        data.append(ProfileViewModel(viewModelType: .info,
+                                     title: "",
+                                     handler: nil))
+        data.append(ProfileViewModel(viewModelType: .info,
+                                     title: "",
+                                     handler: nil))
+        data.append(ProfileViewModel(viewModelType: .dev, title: " The Developer", handler: { [weak self] in
+
+            guard let strongSelf = self else {
+                return
+            }
+
+            let actionSheet = UIAlertController(title: "spaceMuleCode \n Want your own App?",
+                                          message: "",
+                                          preferredStyle: .alert)
+            actionSheet.addAction(UIAlertAction(title: "Contact me",
+                                                style: .default,
+                                          handler: { [weak self] _ in
+
+                                            guard let strongSelf = self else {
+                                                return
+                                            }
+
+                                            let url = NSURL(string: "mailto:zachary@spacemulecode.com")
+                                            UIApplication.shared.open(url! as URL)
+
+
+                                          
+                                            
+
+            }))
+           
 
             actionSheet.addAction(UIAlertAction(title: "Cancel",
                                                 style: .cancel,
@@ -164,10 +213,13 @@ class ProfileTableViewCell: UITableViewCell {
         case .logout:
             textLabel?.textColor = .red
             textLabel?.textAlignment = .center
+        case .dev:
+            textLabel?.textColor = .blue
+            textLabel?.textAlignment = .center
+            
         case .deleteaccount:
             textLabel?.textColor = .red
             textLabel?.textColor = .red
-            
         }
     }
 

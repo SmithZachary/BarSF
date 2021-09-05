@@ -9,11 +9,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--QR-->
         <scene sceneID="Zv0-eq-fpx">
             <objects>
                 <navigationController id="bLR-K2-Yk3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Ujl-St-koV"/>
+                    <tabBarItem key="tabBarItem" title="QR" id="Ujl-St-koV"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jxX-um-CDh">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -47,11 +47,11 @@
             </objects>
             <point key="canvasLocation" x="-270" y="-972"/>
         </scene>
-        <!--Item-->
+        <!--Main Menu-->
         <scene sceneID="abV-P0-sdg">
             <objects>
                 <navigationController id="fV6-dN-z0i" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="eDV-kk-U7H"/>
+                    <tabBarItem key="tabBarItem" title="Main Menu" id="eDV-kk-U7H"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="I9n-dF-bvi">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -112,11 +112,11 @@
             </objects>
             <point key="canvasLocation" x="249" y="434"/>
         </scene>
-        <!--Item-->
+        <!--Chat-->
         <scene sceneID="iJm-Bb-zRL">
             <objects>
                 <navigationController id="RmY-25-1fr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="IY3-nW-Yey"/>
+                    <tabBarItem key="tabBarItem" title="Chat" id="IY3-nW-Yey"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DZF-Wv-BRZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -129,11 +129,11 @@
             </objects>
             <point key="canvasLocation" x="213" y="-254"/>
         </scene>
-        <!--Item-->
+        <!--Workouts-->
         <scene sceneID="t0k-f5-tVz">
             <objects>
                 <navigationController id="K2P-0g-lyn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="et0-KR-Tps"/>
+                    <tabBarItem key="tabBarItem" title="Workouts" id="et0-KR-Tps"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7NY-VI-M2N">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -204,6 +204,51 @@
             </objects>
             <point key="canvasLocation" x="1045" y="501"/>
         </scene>
+        <!--My SwipeVC-->
+        <scene sceneID="IEk-uv-OgD">
+            <objects>
+                <viewController storyboardIdentifier="redVC" id="zt7-1E-vRR" customClass="MySwipeVC" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gaT-R4-k1O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5dK-T7-V6k"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TZj-Py-D7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="695" y="1511"/>
+        </scene>
+        <!--My SwipeVC-->
+        <scene sceneID="kjN-Iv-tpQ">
+            <objects>
+                <viewController storyboardIdentifier="blueVC" id="g4h-pC-ISA" customClass="MySwipeVC" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dFU-qZ-ze8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="saS-Lk-qdG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxO-bz-3Gg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1494" y="1516"/>
+        </scene>
+        <!--My SwipeVC-->
+        <scene sceneID="D5Y-3a-AQV">
+            <objects>
+                <viewController storyboardIdentifier="greenVC" id="Pie-3D-A3a" customClass="MySwipeVC" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5l6-eR-f8u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cE8-sw-7h1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QCp-Fo-tLQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2558" y="1487"/>
+        </scene>
         <!--Profile View Controller-->
         <scene sceneID="Pto-6T-iHs">
             <objects>
@@ -238,7 +283,7 @@
         <!--Glute Drive View Controller-->
         <scene sceneID="BC4-y9-98D">
             <objects>
-                <viewController storyboardIdentifier="GluteDriveViewController" id="q7A-54-lMV" customClass="GluteDriveViewController" customModule="Bar_S_F" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GluteDriveViewController" id="q7A-54-lMV" customClass="GluteDriveViewController" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JO5-Dl-JXh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -266,7 +311,7 @@
         <!--Leg Press View Controller-->
         <scene sceneID="eZ7-Ne-dQE">
             <objects>
-                <viewController storyboardIdentifier="LegPressViewController" id="0Ds-V9-GIN" customClass="LegPressViewController" customModule="Bar_S_F" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LegPressViewController" id="0Ds-V9-GIN" customClass="LegPressViewController" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ctH-eS-3g3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -294,7 +339,7 @@
         <!--Seated Leg Curl View Controller-->
         <scene sceneID="EEs-U9-x53">
             <objects>
-                <viewController storyboardIdentifier="SeatedLegCurlViewController" id="wYZ-uj-9TS" customClass="SeatedLegCurlViewController" customModule="Bar_S_F" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SeatedLegCurlViewController" id="wYZ-uj-9TS" customClass="SeatedLegCurlViewController" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jk6-zq-6MC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -322,7 +367,7 @@
         <!--Belt Squat View Controller-->
         <scene sceneID="ykE-EQ-XR0">
             <objects>
-                <viewController storyboardIdentifier="BeltSquatViewController" id="uWF-A4-pk9" customClass="BeltSquatViewController" customModule="Bar_S_F" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BeltSquatViewController" id="uWF-A4-pk9" customClass="BeltSquatViewController" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dBc-F4-ut8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -350,7 +395,7 @@
         <!--Leg Extension View Controller-->
         <scene sceneID="hl3-Cl-n3F">
             <objects>
-                <viewController storyboardIdentifier="LegExtensionViewController" id="7LK-wS-rqx" customClass="LegExtensionViewController" customModule="Bar_S_F" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LegExtensionViewController" id="7LK-wS-rqx" customClass="LegExtensionViewController" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S55-6S-glK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -378,7 +423,7 @@
         <!--Gluteator View Controller-->
         <scene sceneID="A2d-qM-UUv">
             <objects>
-                <viewController storyboardIdentifier="GluteatorViewController" id="Mk8-Xc-b51" customClass="GluteatorViewController" customModule="Bar_S_F" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GluteatorViewController" id="Mk8-Xc-b51" customClass="GluteatorViewController" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kLm-XX-mhv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -401,7 +446,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kSC-OZ-hfn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3297" y="2735"/>
+            <point key="canvasLocation" x="-3181" y="2733"/>
         </scene>
         <!--Hax Squat Machine View Controller-->
         <scene sceneID="MQg-th-7yl">
@@ -434,7 +479,7 @@
         <!--Standing Calf Machine View Controller-->
         <scene sceneID="Upe-I0-aXT">
             <objects>
-                <viewController storyboardIdentifier="StandingCalfMachineViewController" id="Iai-Fp-ish" customClass="StandingCalfMachineViewController" customModule="Bar_S_F" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StandingCalfMachineViewController" id="Iai-Fp-ish" customClass="StandingCalfMachineViewController" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IMk-2l-7IT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -462,7 +507,7 @@
         <!--Standing Leg Curl View Controller-->
         <scene sceneID="OTN-7L-F7Z">
             <objects>
-                <viewController storyboardIdentifier="StandingLegCurlViewController" id="MDL-8q-nsn" customClass="StandingLegCurlViewController" customModule="Bar_S_F" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StandingLegCurlViewController" id="MDL-8q-nsn" customClass="StandingLegCurlViewController" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C5L-LB-oVc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -490,7 +535,7 @@
         <!--Super Squat View Controller-->
         <scene sceneID="n8n-Wl-OMA">
             <objects>
-                <viewController storyboardIdentifier="SuperSquatViewController" id="N69-oq-ywh" customClass="SuperSquatViewController" customModule="Bar_S_F" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SuperSquatViewController" id="N69-oq-ywh" customClass="SuperSquatViewController" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X2Y-lJ-0Mh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -518,7 +563,7 @@
         <!--Lying Leg Extension View Controller-->
         <scene sceneID="rYc-0S-KVn">
             <objects>
-                <viewController storyboardIdentifier="LyingLegExtensionViewController" id="Bzn-zo-vel" customClass="LyingLegExtensionViewController" customModule="Bar_S_F" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LyingLegExtensionViewController" id="Bzn-zo-vel" customClass="LyingLegExtensionViewController" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YvJ-uq-y7Y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -542,6 +587,233 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i1j-8f-aFH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2236" y="3518"/>
+        </scene>
+        <!--Iso Later Wide Chest Press View Controller-->
+        <scene sceneID="kaJ-qe-zQ6">
+            <objects>
+                <viewController storyboardIdentifier="IsoLaterWideChestPressViewController" id="Z79-d6-uUn" customClass="IsoLaterWideChestPressViewController" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rmr-Ra-wAD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCH-gN-wjc">
+                                <rect key="frame" x="184" y="706" width="46" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="playVWithSender:" destination="Z79-d6-uUn" eventType="touchUpInside" id="jzM-T2-QjZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rE9-79-eOa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="playv" destination="cCH-gN-wjc" id="ZJB-OD-gDO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qlg-d8-BQv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1517.3913043478262" y="1369.4196428571429"/>
+        </scene>
+        <!--Iso Lateral Low Row View Controller-->
+        <scene sceneID="ocu-0Q-fTR">
+            <objects>
+                <viewController storyboardIdentifier="IsoLateralLowRowViewController" id="F3y-bO-slM" customClass="IsoLateralLowRowViewController" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="edV-N8-YgB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0P0-5a-Qm5">
+                                <rect key="frame" x="184" y="706" width="46" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="playVWithSender:" destination="F3y-bO-slM" eventType="touchUpInside" id="FKl-Cb-Yzb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IJN-9t-RpD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="playv" destination="0P0-5a-Qm5" id="e5f-Uh-VER"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aHr-Ts-UT6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3181" y="1369"/>
+        </scene>
+        <!--Flat Bench Press View Controller-->
+        <scene sceneID="70X-vU-uH7">
+            <objects>
+                <viewController storyboardIdentifier="FlatBenchPressViewController" id="14b-te-6wm" customClass="FlatBenchPressViewController" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XIX-Bd-UEH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6S9-qA-vFJ">
+                                <rect key="frame" x="184" y="692" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="playVWithSender:" destination="14b-te-6wm" eventType="touchUpInside" id="RNw-Ps-wI0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MyQ-C0-5HZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="playv" destination="6S9-qA-vFJ" id="b51-KX-0JZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pbx-T1-m2H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3181" y="2076"/>
+        </scene>
+        <!--Incline Press View Controller-->
+        <scene sceneID="gPt-qX-rUT">
+            <objects>
+                <viewController storyboardIdentifier="InclinePressViewController" id="spm-di-DxZ" customClass="InclinePressViewController" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X7e-D1-3Dx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWJ-la-DSz">
+                                <rect key="frame" x="184" y="706" width="46" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="playVWithSender:" destination="spm-di-DxZ" eventType="touchUpInside" id="2VB-ie-7uQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Obo-q8-Vkz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="playv" destination="NWJ-la-DSz" id="pBJ-iv-3yx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lJO-w2-6Kc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1500" y="2042"/>
+        </scene>
+        <!--Peck Deck View Controller-->
+        <scene sceneID="Tat-M3-LCw">
+            <objects>
+                <viewController storyboardIdentifier="PeckDeckViewController" id="Crs-v7-m0b" customClass="PeckDeckViewController" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sof-qR-jPT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sC5-rE-d8n">
+                                <rect key="frame" x="184" y="706" width="46" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="playVWithSender:" destination="Crs-v7-m0b" eventType="touchUpInside" id="4O6-bQ-HbR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fD2-qn-6D1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="playv" destination="sC5-rE-d8n" id="cYb-UX-Uhg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="prp-yy-M4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2255" y="2076"/>
+        </scene>
+        <!--Power Press View Controller-->
+        <scene sceneID="SUH-e0-arf">
+            <objects>
+                <viewController storyboardIdentifier="PowerPressViewController" id="mhN-65-0Jq" customClass="PowerPressViewController" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hTv-93-qbj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COU-wI-cJF">
+                                <rect key="frame" x="184" y="706" width="46" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="playVWithSender:" destination="mhN-65-0Jq" eventType="touchUpInside" id="E7L-1K-7uM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CJ2-tp-IWO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="playv" destination="COU-wI-cJF" id="v2T-cc-bi0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4MN-hZ-NCQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2236" y="1382"/>
+        </scene>
+        <!--Chest SupporedT Bar Row View Controller-->
+        <scene sceneID="vGu-hu-Oeq">
+            <objects>
+                <viewController storyboardIdentifier="ChestSupporedTBarRowViewController" id="n0O-3f-M2G" customClass="ChestSupporedTBarRowViewController" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SCk-sG-hzP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="534-MR-hM4">
+                                <rect key="frame" x="184" y="706" width="46" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="playVWithSender:" destination="n0O-3f-M2G" eventType="touchUpInside" id="xyI-6S-ANC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Afi-m2-iw5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="playv" destination="534-MR-hM4" id="ou1-i0-eSi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rpM-nc-hcS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3181" y="612"/>
+        </scene>
+        <!--Iso LateralDY Row View Controller-->
+        <scene sceneID="tJS-GO-r7j">
+            <objects>
+                <viewController storyboardIdentifier="IsoLateralDYRowViewController" id="Xnp-VS-ySL" customClass="IsoLateralDYRowViewController" customModule="BarSF" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Vn-NA-iHU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOi-uN-yeY">
+                                <rect key="frame" x="184" y="706" width="46" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="playVWithSender:" destination="Xnp-VS-ySL" eventType="touchUpInside" id="BrH-jp-7O6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3k3-g7-1xx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="playv" destination="tOi-uN-yeY" id="ZNQ-pn-loH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p7x-Do-HLL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2368" y="611"/>
         </scene>
     </scenes>
     <resources>

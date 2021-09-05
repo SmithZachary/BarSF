@@ -26,6 +26,11 @@ class ForgotPassViewController: UIViewController {
         label.font = .systemFont(ofSize: 30, weight: .bold)
         label.text = "Forgot Password?"
         label.textAlignment = .center
+        label.layer.shadowColor = UIColor.white.cgColor
+        label.layer.shadowOffset = .zero
+        label.layer.shadowRadius = 2.0
+        label.layer.shadowOpacity = 1.0
+        label.layer.masksToBounds = false
         return label
     }()
     

@@ -31,7 +31,7 @@ class MySwipeVC: EZSwipeController {
     
     private let label: UILabel = {
         let text = UILabel()
-        text.text = "Derek Heard Personal Training"
+        text.text = "Derek Hered Personal Training"
         text.numberOfLines = 1
         text.textColor = .white
         return text
@@ -64,7 +64,30 @@ class MySwipeVC: EZSwipeController {
         text.textColor = .white
         return text
     }()
-    
+    private let instaB: UIButton = {
+    let button = UIButton()
+        button.setImage(UIImage(named: "insta"), for: .normal)
+        button.addTarget(self, action: #selector(didTapBinsta), for: .touchUpInside)
+        return button
+    }()
+    private let instaM: UIButton = {
+    let button = UIButton()
+        button.setImage(UIImage(named: "insta"), for: .normal)
+        button.addTarget(self, action: #selector(didTapMinsta), for: .touchUpInside)
+        return button
+    }()
+    private let fbB: UIButton = {
+    let button = UIButton()
+        button.setImage(UIImage(named: "fb"), for: .normal)
+        button.addTarget(self, action: #selector(didTapfbB), for: .touchUpInside)
+        return button
+    }()
+    private let fbM: UIButton = {
+    let button = UIButton()
+        button.setImage(UIImage(named: "fb"), for: .normal)
+        button.addTarget(self, action: #selector(didTapfbM), for: .touchUpInside)
+        return button
+    }()
     
     override func setupView() {
         
@@ -79,6 +102,52 @@ class MySwipeVC: EZSwipeController {
         
         view.backgroundColor = UIColor(red: 231/255, green: 231/255, blue: 231/255, alpha: 1)
     }
+    @objc func didTapBinsta(_ sender: UIButton) {
+        let instagramHooks = "instagram://user?username=derek_gains"
+        let instagramUrl = NSURL(string: instagramHooks)
+        if UIApplication.shared.canOpenURL(instagramUrl! as URL) {
+            UIApplication.shared.open(instagramUrl! as URL)
+        } else {
+          //redirect to safari because the user doesn't have Instagram
+            UIApplication.shared.open(NSURL(string: "https://www.instagram.com/derek_gains/")! as URL)
+        }
+        
+        
+    }
+    @objc func didTapMinsta(_ sender: UIButton) {
+        let instagramHooks = "instagram://user?username=milburystrength"
+        let instagramUrl = NSURL(string: instagramHooks)
+        if UIApplication.shared.canOpenURL(instagramUrl! as URL) {
+            UIApplication.shared.open(instagramUrl! as URL)
+        } else {
+          //redirect to safari because the user doesn't have Instagram
+            UIApplication.shared.open(NSURL(string: "https://www.instagram.com/milburystrength/")! as URL)
+        }
+        
+        
+    }
+    @objc func didTapfbB(_ sender: UIButton) {
+        let instagramHooks = "facebook://user?username=Derek-Hered-Personal-Training-484032975112203"
+        let instagramUrl = NSURL(string: instagramHooks)
+        if UIApplication.shared.canOpenURL(instagramUrl! as URL) {
+            UIApplication.shared.open(instagramUrl! as URL)
+        } else {
+          //redirect to safari because the user doesn't have Instagram
+            UIApplication.shared.open(NSURL(string: "https://www.facebook.com/Derek-Hered-Personal-Training-484032975112203/")! as URL)
+        }
+        
+    }
+    @objc func didTapfbM(_ sender: UIButton) {
+        let instagramHooks = "facebook://user?username=matt.milbury.9"
+        let instagramUrl = NSURL(string: instagramHooks)
+        if UIApplication.shared.canOpenURL(instagramUrl! as URL) {
+            UIApplication.shared.open(instagramUrl! as URL)
+        } else {
+          //redirect to safari because the user doesn't have Instagram
+            UIApplication.shared.open(NSURL(string: "https://www.facebook.com/matt.milbury.9/")! as URL)
+        }
+        
+    }
 }
 
 extension MySwipeVC: EZSwipeControllerDataSource {
@@ -92,11 +161,16 @@ extension MySwipeVC: EZSwipeControllerDataSource {
         
         
         let redVC = UIViewController()
-        redVC.view.backgroundColor = UIColor.red
-     let matt = UIImageView(x: 50, y: 100, imageName: "Derek_JPG-modified", scaleToWidth: 200)
+        redVC.view.backgroundColor = UIColor.white
+     let derek = UIImageView(x: 50, y: 100, imageName: "Derek_JPG-modified", scaleToWidth: 200)
+        derek.layer.borderWidth = 5
+        derek.layer.borderColor = UIColor.black.cgColor
+        derek.layer.masksToBounds = true
+        derek.layer.cornerRadius = 100
+      
         let label = UILabel()
-        label.text = "Brian Test"
-        label.frame = CGRect(x: 30, y: matt.top - 40, width: 100, height: 20)
+        label.text = "Derek Hered Personal Training"
+        label.frame = CGRect(x: 30, y: derek.top - 40, width: 100, height: 20)
         let longLabel = UILabel()
         longLabel.numberOfLines = 12
         longLabel.text = """
@@ -112,19 +186,51 @@ extension MySwipeVC: EZSwipeControllerDataSource {
             -General strength training programs
             -General health and fitness programs
             """
-        longLabel.frame = CGRect(x: 30, y: matt.bottom, width: 400, height: 300)
-        redVC.view.addSubview(matt)
+        longLabel.frame = CGRect(x: 30, y: derek.bottom, width: 400, height: 300)
+        instaB.frame = CGRect(x: derek.right, y: derek.top, width: 90, height: 90)
+        fbB.frame = CGRect(x: derek.right, y: instaB.bottom + 30, width: 90, height: 90)
+        redVC.view.addSubview(derek)
         redVC.view.addSubview(label)
         redVC.view.addSubview(longLabel)
+        redVC.view.addSubview(instaB)
+        redVC.view.addSubview(fbB)
+       
         
       
       
     
         
         let blueVC = UIViewController()
-        blueVC.view.backgroundColor = UIColor.blue
-        let squir = UIImageView(x: 50, y: 100, imageName: "squir", scaleToWidth: 300)
-        blueVC.view.addSubview(squir)
+        blueVC.view.backgroundColor = UIColor.white
+     let matt = UIImageView(x: 50, y: 100, imageName: "matt_PNG-modified", scaleToWidth: 200)
+        matt.layer.borderWidth = 5
+        matt.layer.borderColor = UIColor.black.cgColor
+        matt.layer.masksToBounds = true
+        matt.layer.cornerRadius = 100
+      
+        let mlabel = UILabel()
+        mlabel.text = "Matt Milbury Personal Training"
+        mlabel.frame = CGRect(x: 30, y: matt.top - 40, width: 100, height: 20)
+        let mlongLabel = UILabel()
+        mlongLabel.numberOfLines = 12
+        mlongLabel.text = """
+            -ACE Certified Personal Trainer
+            -USPA Certified Powerlifting Coach
+            -BS in Exercise Science
+            -5+ Years of Coaching/Personal Training
+            ​
+            -Online personal programming available upon request
+            -One on one in person training available-- focusing on physique/bodybuilding goals & strength training.
+            ​
+            """
+        mlongLabel.frame = CGRect(x: 30, y: matt.bottom, width: 400, height: 300)
+        instaM.frame = CGRect(x: matt.right, y: matt.top, width: 90, height: 90)
+        fbM.frame = CGRect(x: matt.right, y: instaM.bottom + 30, width: 90, height: 90)
+        blueVC.view.addSubview(matt)
+        blueVC.view.addSubview(mlabel)
+        blueVC.view.addSubview(mlongLabel)
+        blueVC.view.addSubview(instaM)
+        blueVC.view.addSubview(fbM)
 
         let greenVC = UIViewController()
         greenVC.view.backgroundColor = UIColor.green
@@ -137,13 +243,13 @@ extension MySwipeVC: EZSwipeControllerDataSource {
     func navigationBarDataForPageIndex(_ index: Int) -> UINavigationBar {
         var title = ""
         if index == 0 {
-            title = "Charmander"
+            title = "The Bar Personal Trainers"
         } else if index == 1 {
-            title = "Squirtle"
+            title = "The Bar Personal Trainers"
         } else if index == 2 {
-            title = "Bulbasaur"
+            title = "The Bar Personal Trainers"
         }
-
+        navigationController?.isToolbarHidden = true
         let navigationBar = UINavigationBar()
         navigationBar.barStyle = UIBarStyle.default
         navigationBar.barTintColor = UIColor(red: 231/255, green: 231/255, blue: 231/255, alpha: 1)
@@ -153,30 +259,30 @@ extension MySwipeVC: EZSwipeControllerDataSource {
         navigationItem.hidesBackButton = true
         
         if index == 0 {
-            var sImage = UIImage(named: "bardogpower")
+            var sImage = UIImage(named: "swipe")
             sImage = scaleTo(image: sImage!, w: 22, h: 22)
             let rightButtonItem = UIBarButtonItem(image: sImage, style: .plain, target: self, action: nil)
-            rightButtonItem.tintColor = UIColor.blue
+            rightButtonItem.tintColor = UIColor.white
             let widtha = UIScreen.main.bounds.size.width
             let heighta = UIScreen.main.bounds.size.height
             
             let imageViewBackground = UIImageView(frame: CGRect(x: 0, y: 0, width: widtha, height: heighta))
-            imageViewBackground.image = UIImage(named: "bardogpower")!
+            imageViewBackground.image = UIImage(named: "swipe")!
             imageViewBackground.alpha = 0.3
             
             imageViewBackground.contentMode = UIView.ContentMode.scaleToFill
             navigationItem.leftBarButtonItem = nil
             navigationItem.rightBarButtonItem = rightButtonItem
         } else if index == 1 {
-            var cImage = UIImage(named: "bardogpower")!
+            var cImage = UIImage(named: "swipe")!
             cImage = scaleTo(image: cImage, w: 22, h: 22)
             let leftButtonItem = UIBarButtonItem(image: cImage, style: .plain, target: self, action: nil)
-            leftButtonItem.tintColor = UIColor.red
+            leftButtonItem.tintColor = UIColor.white
             
-            var bImage = UIImage(named: "bardogpower")!
+            var bImage = UIImage(named: "swipe")!
             bImage = scaleTo(image: bImage, w: 22, h: 22)
             let rightButtonItem = UIBarButtonItem(image: bImage, style: .plain, target: self, action: nil)
-            rightButtonItem.tintColor = UIColor.green
+            rightButtonItem.tintColor = UIColor.white
             
             navigationItem.leftBarButtonItem = leftButtonItem
             navigationItem.rightBarButtonItem = rightButtonItem
@@ -184,7 +290,7 @@ extension MySwipeVC: EZSwipeControllerDataSource {
             var sImage = UIImage(named: "bardogpower")!
             sImage = scaleTo(image: sImage, w: 22, h: 22)
             let leftButtonItem = UIBarButtonItem(image: sImage, style: .plain, target: self, action: nil)
-            leftButtonItem.tintColor = UIColor.blue
+            leftButtonItem.tintColor = UIColor.white
             
             navigationItem.leftBarButtonItem = leftButtonItem
             navigationItem.rightBarButtonItem = nil

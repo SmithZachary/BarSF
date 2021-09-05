@@ -178,7 +178,7 @@ final class LoginViewController: UIViewController, FUIAuthDelegate{
         view.addBackground()
         
         navigationController?.navigationBar.prefersLargeTitles = true
-        title = "WELCOME"
+        title = ""
       
       
         navigationController?.navigationBar.layer.masksToBounds = true

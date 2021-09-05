@@ -42,27 +42,7 @@ class MainMenuViewController: UIViewController {
     
     private let wTextField: UILabel = {
        let text = UILabel()
-        text.textAlignment = .center
-        text.textColor = .red
-      
-        text.font = UIFont.boldSystemFont(ofSize: 30)
-        text.numberOfLines = 20
-        text.lineBreakMode = .byWordWrapping
-       
-        text.sizeToFit()
-        text.clipsToBounds = true
-        text.text = "Let's Get Started"
-        text.layer.masksToBounds = true
-        text.tintColor = .white
-       
-//        text.layer.borderColor = UIColor.black.cgColor
-//        text.backgroundColor = .white
-        text.layer.cornerRadius = 12
-        text.layer.shadowColor = UIColor.black.cgColor
-       text.layer.shadowOffset = CGSize(width: 0.0,height: 1.0)
-        text.layer.masksToBounds = true
-        text.layer.shadowOpacity = 1.0
-        text.alpha = 0.9
+     
         
         return text
 
@@ -70,27 +50,7 @@ class MainMenuViewController: UIViewController {
     
     private let qtextField: UILabel = {
        let text = UILabel()
-        text.textAlignment = .center
-        text.textColor = .black
-      
-        text.font = UIFont.boldSystemFont(ofSize: 20)
-        text.numberOfLines = 20
-        text.lineBreakMode = .byWordWrapping
-       
-        text.sizeToFit()
-        text.clipsToBounds = true
-        text.text = " We are excited you are here!\n\n As a part of our move we are introducing QR Stregnth.\n\n It's a great tool for begginers and experts alike.\n To get started click on the QR Icon below and find a QR code to scan."
-        text.layer.masksToBounds = true
-        text.tintColor = .white
-        text.layer.borderWidth = 2
-//        text.layer.borderColor = UIColor.black.cgColor
-//        text.backgroundColor = .white
-        text.layer.cornerRadius = 12
-        text.layer.shadowColor = UIColor.black.cgColor
-       text.layer.shadowOffset = CGSize(width: 0.0,height: 1.0)
-        text.layer.masksToBounds = true
-        text.layer.shadowOpacity = 1.0
-        text.alpha = 0.9
+    
         
         return text
 
@@ -114,7 +74,7 @@ class MainMenuViewController: UIViewController {
     
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.isTranslucent = true
-        title = "THE BAR"
+        title = "Welcome"
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "line.horizontal.3"),
                                                             style: .done,
                                                             target: self,
@@ -154,14 +114,14 @@ class MainMenuViewController: UIViewController {
             }
         )
 
+      
         alert.addAction(
             .init(title: "Trainers", style: .default) { _ in
-                let vc = MySwipeVC()
-                self.navigationController?.pushViewController(vc, animated: true)
-                
+                let vcOne = self.storyboard?.instantiateViewController(identifier: "redVC") as! UIViewController
+                self.present(vcOne, animated: true, completion:nil)
             }
         )
-       
+      
         present(alert, animated: true)
         
         
@@ -178,7 +138,9 @@ class MainMenuViewController: UIViewController {
 
         self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.backgroundColor : UIColor.red]
 
-        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.strokeWidth : 2.0]
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.strokeWidth : 8.0]
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.strikethroughStyle :  8 ]
+        
         
         let size = scrollView.width/3
         wTextField.frame = CGRect(x: 25,
