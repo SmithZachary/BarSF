@@ -257,7 +257,57 @@ final class LoginViewController: UIViewController, FUIAuthDelegate{
         lostField.addGestureRecognizer(lostRecognizer)
       
     }
-    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+       
+        scrollView.frame = view.bounds
+
+        let size = scrollView.width/3
+        imageView.frame = CGRect(x: (scrollView.width-size)/2,
+                                 y: 200,
+                                 width: size,
+                                 height: size)
+        imageView.layer.cornerRadius = imageView.width/2
+        emailField.frame = CGRect(x: 30,
+                                  y: scrollView.height/3
+                                  ,
+                                  width: scrollView.width-60,
+                                  height: 52)
+        passwordField.frame = CGRect(x: 30,
+                                     y: emailField.bottom+10,
+                                     width: scrollView.width-60,
+                                     height: 52)
+        loginButton.frame = CGRect(x: 30,
+                                   y: passwordField.bottom+10,
+                                   width: scrollView.width-60,
+                                   height: 52)
+        textField.frame = CGRect(x:(scrollView.center.x)/4,
+                                   y: loginButton.bottom+2,
+                                   width: scrollView.width-60,
+                                   height: 52)
+
+
+        facebookLoginButton.frame = CGRect(x: (scrollView.center.x)/4,
+                                   y: loginButton.bottom+10,
+                                   width: 100,
+                                   height: 52)
+
+        googleLogInButton.frame = CGRect(x: facebookLoginButton.right,
+                                   y: loginButton.bottom+10,
+                                   width: 70,
+                                   height: 52)
+        appleLoginButton.frame = CGRect(x: googleLogInButton.right,
+                                   y: loginButton.bottom+10,
+                                   width: 100,
+                                   height: 52)
+        lostField.frame = CGRect(x: (scrollView.center.x)/4,
+                                 y: scrollView.bottom - 90,
+                                 width: scrollView.width-60,
+                                 height: 52)
+        
+    }
+
     @objc func lostClicked(_ sender: Any){
         textField.isHighlighted = true
         print("----66----------")
@@ -339,57 +389,7 @@ final class LoginViewController: UIViewController, FUIAuthDelegate{
         }
     }
 
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-       
-        scrollView.frame = view.bounds
-
-        let size = scrollView.width/3
-        imageView.frame = CGRect(x: (scrollView.width-size)/2,
-                                 y: 200,
-                                 width: size,
-                                 height: size)
-        imageView.layer.cornerRadius = imageView.width/2
-        emailField.frame = CGRect(x: 30,
-                                  y: scrollView.height/3
-                                  ,
-                                  width: scrollView.width-60,
-                                  height: 52)
-        passwordField.frame = CGRect(x: 30,
-                                     y: emailField.bottom+10,
-                                     width: scrollView.width-60,
-                                     height: 52)
-        loginButton.frame = CGRect(x: 30,
-                                   y: passwordField.bottom+10,
-                                   width: scrollView.width-60,
-                                   height: 52)
-        textField.frame = CGRect(x:(scrollView.center.x)/4,
-                                   y: loginButton.bottom+2,
-                                   width: scrollView.width-60,
-                                   height: 52)
-
-
-        facebookLoginButton.frame = CGRect(x: (scrollView.center.x)/4,
-                                   y: loginButton.bottom+10,
-                                   width: 100,
-                                   height: 52)
-
-        googleLogInButton.frame = CGRect(x: facebookLoginButton.right,
-                                   y: loginButton.bottom+10,
-                                   width: 70,
-                                   height: 52)
-        appleLoginButton.frame = CGRect(x: googleLogInButton.right,
-                                   y: loginButton.bottom+10,
-                                   width: 100,
-                                   height: 52)
-        lostField.frame = CGRect(x: (scrollView.center.x)/4,
-                                 y: scrollView.bottom - 90,
-                                 width: scrollView.width-60,
-                                 height: 52)
-        
-    }
-
+  
 
     @objc private func appleSignInButtonTapped() {
         performSignIn()
@@ -547,7 +547,7 @@ extension LoginViewController: LoginButtonDelegate {
                                                          version: nil,
                                                          httpMethod: .get)
 
-        facebookRequest.start(completionHandler: { _, result, error in
+        facebookRequest.start(completion: { _, result, error in
             guard let result = result as? [String: Any],
                 error == nil else {
                     print("Failed to make facebook graph request")

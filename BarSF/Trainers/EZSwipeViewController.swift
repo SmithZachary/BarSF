@@ -24,6 +24,7 @@ open class EZSwipeController: UIViewController {
 
     public struct Constants {
         public static var Orientation: UIInterfaceOrientation {
+            
             return UIApplication.shared.statusBarOrientation
         }
         public static var ScreenWidth: CGFloat {

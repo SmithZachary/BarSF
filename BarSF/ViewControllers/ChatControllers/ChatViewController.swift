@@ -21,11 +21,11 @@ final class ChatViewController: MessagesViewController {
     private var otherUserPhotoURL: URL?
 
     public static let dateFormatter: DateFormatter = {
-        let formattre = DateFormatter()
-        formattre.dateStyle = .medium
-        formattre.timeStyle = .long
-        formattre.locale = .current
-        return formattre
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .long
+        formatter.locale = .current
+        return formatter
     }()
 
     public let otherUserEmail: String

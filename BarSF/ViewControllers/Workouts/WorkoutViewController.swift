@@ -75,23 +75,20 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
         button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.cornerRadius = 10
-        button.layer.masksToBounds = true
+      
         button.addTarget(self, action: #selector(flatDidPress), for: .touchUpInside)
         button.isUserInteractionEnabled = true
         button.showsTouchWhenHighlighted = true
         button.setTitleColor(.black, for: .normal)
-        
         button.backgroundColor = .white
-        button.layer.borderWidth = 2.0
-        button.layer.borderColor = UIColor.darkGray.cgColor
         button.setTitleColor(.black, for: .normal)
-        button.layer.shadowColor = UIColor.white.cgColor
-        button.layer.shadowOffset = CGSize(width: 1.0,height: 1.0)
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0,height: 2.0)
+        button.layer.shadowOffset = CGSize(width: -2.0,height: -2.0)
         
-     
-       
+        button.layer.masksToBounds = false
         button.layer.shadowOpacity = 1.0
-        button.reversesTitleShadowWhenHighlighted = true
+     
         return button
     }()
     private let peckDeckButton: UIButton = {
@@ -107,11 +104,13 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.setTitleColor(.black, for: .normal)
         button.isUserInteractionEnabled = true
         button.showsTouchWhenHighlighted = true
-        button.layer.borderWidth = 2.0
-        button.layer.borderColor = UIColor.darkGray.cgColor
         button.layer.cornerRadius = 10
         button.backgroundColor = .white
-       
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0,height: 2.0)
+        button.layer.shadowOffset = CGSize(width: -2.0,height: -2.0)
+        button.layer.masksToBounds = false
+        button.layer.shadowOpacity = 1.0
         return button
     }()
     private let inclinePressButton: UIButton = {
@@ -126,8 +125,11 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.isUserInteractionEnabled = true
         button.showsTouchWhenHighlighted = true
-        button.layer.borderWidth = 2.0
-        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0,height: 2.0)
+        button.layer.shadowOffset = CGSize(width: -2.0,height: -2.0)
+        button.layer.masksToBounds = false
+        button.layer.shadowOpacity = 1.0
         button.layer.cornerRadius = 10
         button.backgroundColor = .white
         button.setTitleColor(.black, for: .normal)
@@ -147,8 +149,11 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.isUserInteractionEnabled = true
         button.showsTouchWhenHighlighted = true
         button.setTitleColor(.black, for: .normal)
-        button.layer.borderWidth = 2.0
-        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0,height: 2.0)
+        button.layer.shadowOffset = CGSize(width: -2.0,height: -2.0)
+        button.layer.masksToBounds = false
+        button.layer.shadowOpacity = 1.0
         button.layer.cornerRadius = 10
         button.backgroundColor = .white
         button.contentHorizontalAlignment = .right
@@ -168,8 +173,11 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.isUserInteractionEnabled = true
         button.showsTouchWhenHighlighted = true
         button.setTitleColor(.black, for: .normal)
-        button.layer.borderWidth = 2.0
-        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0,height: 2.0)
+        button.layer.shadowOffset = CGSize(width: -2.0,height: -2.0)
+        button.layer.masksToBounds = false
+        button.layer.shadowOpacity = 1.0
         button.layer.cornerRadius = 10
         button.backgroundColor = .white
         button.contentHorizontalAlignment = .right
@@ -189,8 +197,11 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.showsTouchWhenHighlighted = true
         button.isUserInteractionEnabled = true
         button.setTitleColor(.black, for: .normal)
-        button.layer.borderWidth = 2.0
-        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0,height: 2.0)
+        button.layer.shadowOffset = CGSize(width: -2.0,height: -2.0)
+        button.layer.masksToBounds = false
+        button.layer.shadowOpacity = 1.0
         button.layer.cornerRadius = 10
         button.backgroundColor = .white
         button.contentHorizontalAlignment = .right
@@ -210,8 +221,11 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.showsTouchWhenHighlighted = true
         button.isUserInteractionEnabled = true
         button.setTitleColor(.black, for: .normal)
-        button.layer.borderWidth = 2.0
-        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0,height: 2.0)
+        button.layer.shadowOffset = CGSize(width: -2.0,height: -2.0)
+        button.layer.masksToBounds = false
+        button.layer.shadowOpacity = 1.0
         button.layer.cornerRadius = 10
         button.backgroundColor = .white
         
@@ -230,8 +244,11 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.showsTouchWhenHighlighted = true
         button.isUserInteractionEnabled = true
         button.setTitleColor(.black, for: .normal)
-        button.layer.borderWidth = 2.0
-        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0,height: 2.0)
+        button.layer.shadowOffset = CGSize(width: -2.0,height: -2.0)
+        button.layer.masksToBounds = false
+        button.layer.shadowOpacity = 1.0
         button.layer.cornerRadius = 10
         button.backgroundColor = .white
        
@@ -239,7 +256,7 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
     }()
     private let haxSquatButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Hax Squat", for: .normal)
+        button.setTitle("Hack Squat", for: .normal)
         button.addTarget(self, action: #selector(didTapHax), for: .touchUpInside)
            button.addsack(pic: "hax")
         button.contentHorizontalAlignment = .right
@@ -249,8 +266,11 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.layer.masksToBounds = true
         button.showsTouchWhenHighlighted = true
         button.isUserInteractionEnabled = true
-        button.layer.borderWidth = 2.0
-        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0,height: 2.0)
+        button.layer.shadowOffset = CGSize(width: -2.0,height: -2.0)
+        button.layer.masksToBounds = false
+        button.layer.shadowOpacity = 1.0
         button.layer.cornerRadius = 10
         button.backgroundColor = .white
         button.setTitleColor(.black, for: .normal)
@@ -269,8 +289,11 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.showsTouchWhenHighlighted = true
         button.isUserInteractionEnabled = true
         button.setTitleColor(.black, for: .normal)
-        button.layer.borderWidth = 2.0
-        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0,height: 2.0)
+        button.layer.shadowOffset = CGSize(width: -2.0,height: -2.0)
+        button.layer.masksToBounds = false
+        button.layer.shadowOpacity = 1.0
         button.layer.cornerRadius = 10
         button.backgroundColor = .white
         
@@ -289,8 +312,11 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.showsTouchWhenHighlighted = true
         button.isUserInteractionEnabled = true
         button.setTitleColor(.black, for: .normal)
-        button.layer.borderWidth = 2.0
-        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0,height: 2.0)
+        button.layer.shadowOffset = CGSize(width: -2.0,height: -2.0)
+        button.layer.masksToBounds = false
+        button.layer.shadowOpacity = 1.0
         button.layer.cornerRadius = 10
         button.backgroundColor = .white
        
@@ -309,8 +335,11 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.showsTouchWhenHighlighted = true
         button.isUserInteractionEnabled = true
         button.setTitleColor(.black, for: .normal)
-        button.layer.borderWidth = 2.0
-        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0,height: 2.0)
+        button.layer.shadowOffset = CGSize(width: -2.0,height: -2.0)
+        button.layer.masksToBounds = false
+        button.layer.shadowOpacity = 1.0
         button.layer.cornerRadius = 10
         button.backgroundColor = .white
         
@@ -329,8 +358,11 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.showsTouchWhenHighlighted = true
         button.isUserInteractionEnabled = true
         button.setTitleColor(.black, for: .normal)
-        button.layer.borderWidth = 2.0
-        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0,height: 2.0)
+        button.layer.shadowOffset = CGSize(width: -2.0,height: -2.0)
+        button.layer.masksToBounds = false
+        button.layer.shadowOpacity = 1.0
         button.layer.cornerRadius = 10
         button.backgroundColor = .white
        
@@ -356,8 +388,11 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.isHighlighted = false
         button.showsTouchWhenHighlighted = true
         button.titleLabel?.textAlignment = .center
-        button.layer.borderWidth = 2.0
-        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0,height: 2.0)
+        button.layer.shadowOffset = CGSize(width: -2.0,height: -2.0)
+        button.layer.masksToBounds = false
+        button.layer.shadowOpacity = 1.0
         button.layer.cornerRadius = 10
         button.backgroundColor = .white
        
@@ -376,8 +411,11 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.masksToBounds = true
         button.setTitleColor(.black, for: .normal)
-        button.layer.borderWidth = 2.0
-        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0,height: 2.0)
+        button.layer.shadowOffset = CGSize(width: -2.0,height: -2.0)
+        button.layer.masksToBounds = false
+        button.layer.shadowOpacity = 1.0
         button.layer.cornerRadius = 10
         button.backgroundColor = .white
    
@@ -398,8 +436,11 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.masksToBounds = true
         button.setTitleColor(.black, for: .normal)
-        button.layer.borderWidth = 2.0
-        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0,height: 2.0)
+        button.layer.shadowOffset = CGSize(width: -2.0,height: -2.0)
+        button.layer.masksToBounds = false
+        button.layer.shadowOpacity = 1.0
         button.layer.cornerRadius = 10
         button.backgroundColor = .white
     
@@ -420,8 +461,11 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.masksToBounds = true
         button.setTitleColor(.black, for: .normal)
-        button.layer.borderWidth = 2.0
-        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0,height: 2.0)
+        button.layer.shadowOffset = CGSize(width: -2.0,height: -2.0)
+        button.layer.masksToBounds = false
+        button.layer.shadowOpacity = 1.0
         button.layer.cornerRadius = 10
         button.backgroundColor = .white
         return button
@@ -436,7 +480,7 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.setTitle("Iso-Lateral \n Low Row", for: .normal)
         button.addTarget(self, action: #selector(didTapIsoLatLow), for: .touchUpInside)
         button.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
-        button.addsack(pic: "lowrow")
+        button.addsack(pic:"lowrow")
         button.contentHorizontalAlignment = .right
         button.contentVerticalAlignment = .top
         button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
@@ -444,8 +488,11 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.setTitleColor(.black, for: .normal)
         button.showsTouchWhenHighlighted = true
         button.layer.cornerRadius = 10
-        button.layer.borderWidth = 2.0
-        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0,height: 2.0)
+        button.layer.shadowOffset = CGSize(width: -2.0,height: -2.0)
+        button.layer.masksToBounds = false
+        button.layer.shadowOpacity = 1.0
         button.backgroundColor = .white
       
         
@@ -469,13 +516,13 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
         button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.setTitleColor(.black, for: .normal)
-        button.layer.borderWidth = 2.0
-        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0,height: 2.0)
+        button.layer.shadowOffset = CGSize(width: -2.0,height: -2.0)
+        button.layer.masksToBounds = false
+        button.layer.shadowOpacity = 1.0
         button.layer.cornerRadius = 10
         button.backgroundColor = .white
-     
-       
-        button.layer.masksToBounds = true
        
         return button
     }()
@@ -493,8 +540,11 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         button.titleEdgeInsets = UIEdgeInsets(top: 3, left: 0 , bottom: 0, right: 3)
         button.titleLabel?.font = UIFont(name: "din condensed", size: 16)
         button.layer.masksToBounds = true
-        button.layer.borderWidth = 2.0
-        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0,height: 2.0)
+        button.layer.shadowOffset = CGSize(width: -2.0,height: -2.0)
+        button.layer.masksToBounds = false
+        button.layer.shadowOpacity = 1.0
         button.layer.cornerRadius = 10
         button.backgroundColor = .white
         button.setTitleColor(.black, for: .normal)
@@ -596,7 +646,7 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {
             action in
             
-                
+                 // Called when user taps outside
         }))
 
         alert.addAction(
@@ -607,25 +657,26 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
             }
         )
 
+      
         alert.addAction(
-            .init(title: "Trainers", style: .default) { _ in
-                let vc = MySwipeVC()
-                self.navigationController?.pushViewController(vc, animated: true)
-                
+            .init(title: "Personal Trainers", style: .default) { _ in
+                let vcOne = self.storyboard?.instantiateViewController(identifier: "redVC") as! UIViewController
+                self.present(vcOne, animated: true, completion:nil)
             }
         )
-        alert.addAction(
-            .init(title: "About", style: .default) { _ in
-                let vc = spaceMuleCodeViewController()
-                self.navigationController?.pushViewController(vc, animated: true)
-                
-            }
-        )
-       
+      
         present(alert, animated: true)
         
-        
-        
+        alert.addAction(
+            .init(title: "Shop(Coming Soon)", style: .default) { _ in
+              
+            }
+        )
+        alert.addAction(
+            .init(title: "Member Services(Coming Soon)", style: .default) { _ in
+              
+            }
+        )
         
         
         
@@ -633,19 +684,24 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
     }
     
     @objc func flatDidPress(_ sender: UIButton) {
-            
+        let vcOne = storyboard?.instantiateViewController(identifier: "FlatBenchPressViewController") ?? WorkOutViewController() as UIViewController
+        present(vcOne, animated: true, completion:nil)
         }
     @objc func didTapPeck(_ sender: UIButton) {
-            
+        let vcOne = storyboard?.instantiateViewController(identifier: "PeckDeckViewController") ?? WorkOutViewController() as UIViewController
+        present(vcOne, animated: true, completion:nil)
         }
     @objc func didTapInclinePress(_ sender: UIButton) {
-            
+        let vcOne = storyboard?.instantiateViewController(identifier: "InclinePressViewController") ?? WorkOutViewController() as UIViewController
+        present(vcOne, animated: true, completion:nil)
         }
     @objc func didTapIsoLat(_ sender: UIButton) {
-            
+        let vcOne = storyboard?.instantiateViewController(identifier: "IsoLaterWideChestPressViewController") ?? WorkOutViewController() as UIViewController
+        present(vcOne, animated: true, completion:nil)
         }
     @objc func didTapPowerPress(_ sender: UIButton) {
-            
+        let vcOne = storyboard?.instantiateViewController(identifier: "PowerPressViewController") ?? WorkOutViewController() as UIViewController
+        present(vcOne, animated: true, completion:nil)
         }
     @objc func didTapGluteDrive(_ sender: UIButton) {
         let vcOne = storyboard?.instantiateViewController(identifier: "GluteDriveViewController") ?? WorkOutViewController() as UIViewController
@@ -656,7 +712,7 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
           present(vcOne, animated: true, completion:nil)
         }
     @objc func didTapLegPress(_ sender: UIButton) {
-        let vcOne = storyboard?.instantiateViewController(identifier: "LegPressVIewController") ?? WorkOutViewController() as UIViewController
+        let vcOne = storyboard?.instantiateViewController(identifier: "LegPressViewController") ?? WorkOutViewController() as UIViewController
           present(vcOne, animated: true, completion:nil)
         }
     @objc func didTapHax(_ sender: UIButton) {
@@ -683,7 +739,7 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
             
         }
     @objc func didTapInverse(_ sender: UIButton) {
-        let vcOne = storyboard?.instantiateViewController(identifier: "RegistrationViewController") ?? WorkOutViewController() as UIViewController
+        let vcOne = storyboard?.instantiateViewController(identifier: "InverseCurlViewController") ?? WorkOutViewController() as UIViewController
           present(vcOne, animated: true, completion:nil)
         }
     @objc func didTapGlute(_ sender: UIButton) {
@@ -701,13 +757,17 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
           present(vcOne, animated: true, completion:nil)
         }
     @objc func didTapIsoLatLow(_ sender: UIButton) {
-            
+        let vcOne = storyboard?.instantiateViewController(identifier: "IsoLatLowRowViewController") ?? WorkOutViewController() as UIViewController
+          present(vcOne, animated: true, completion:nil)
         }
     @objc func didTapChestRow(_ sender: UIButton) {
-            
+        let vcOne = storyboard?.instantiateViewController(identifier: "ChestSupporedTBarRowViewController") ?? WorkOutViewController() as UIViewController
+          present(vcOne, animated: true, completion:nil)
+        
         }
     @objc func didTapDYRow(_ sender: UIButton) {
-            
+        let vcOne = storyboard?.instantiateViewController(identifier: "IsoDYViewController") ?? WorkOutViewController() as UIViewController
+          present(vcOne, animated: true, completion:nil)
         }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -772,12 +832,12 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
                                  y: 10,
                                  width: 125,
                                  height: 125)
-        ChestSupportedRow.frame = CGRect(x: isoLatLowRow.right + 3,
+        ChestSupportedRow.frame = CGRect(x: isoLatLowRow.right + 5,
                                  y: 10
                                  ,
                                  width: 125,
                                  height: 125)
-        IsoLatDYRow.frame = CGRect(x: ChestSupportedRow.right + 3,
+        IsoLatDYRow.frame = CGRect(x: ChestSupportedRow.right + 5,
                                  y: 10,
                                  width: 125,
                                  height: 125)
@@ -788,22 +848,22 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
                                  y: 10,
                                  width: 125,
                                  height: 125)
-        peckDeckButton.frame = CGRect(x: flatBenchPressButton.right + 3,
+        peckDeckButton.frame = CGRect(x: flatBenchPressButton.right + 5,
                                  y: 10
                                  ,
                                  width: 125,
                                  height: 125)
-        inclinePressButton.frame = CGRect(x: peckDeckButton.right + 3,
+        inclinePressButton.frame = CGRect(x: peckDeckButton.right + 5,
                                  y: 10,
                                  width: 125,
                                  height: 125)
         
-        isoLateralWidePressPressButton.frame = CGRect(x: inclinePressButton.right + 3,
+        isoLateralWidePressPressButton.frame = CGRect(x: inclinePressButton.right + 5,
                                  y: 10
                                  ,
                                  width: 125,
                                  height: 125)
-        powerPressButton.frame = CGRect(x: isoLateralWidePressPressButton.right + 3,
+        powerPressButton.frame = CGRect(x: isoLateralWidePressPressButton.right + 5,
                                  y: 10,
                                  width: 125,
                                  height: 125)
@@ -814,48 +874,48 @@ class WorkOutViewController: UIViewController, UIScrollViewDelegate {
                                  y: 10,
                                  width: 125,
                                  height: 125)
-        gluteatorButton.frame = CGRect(x: inverseCurlButton.right + 3,
+        gluteatorButton.frame = CGRect(x: inverseCurlButton.right + 5,
                                  y: 10
                                  ,
                                  width: 125,
                                  height: 125)
-        superSquatPressButton.frame = CGRect(x: gluteatorButton.right + 3,
+        superSquatPressButton.frame = CGRect(x: gluteatorButton.right + 5,
                                  y: 10,
                                  width: 125,
                                  height: 125)
-        standingLegCurlPressButton.frame = CGRect(x: superSquatPressButton.right + 3,
+        standingLegCurlPressButton.frame = CGRect(x: superSquatPressButton.right + 5,
                                  y: 10
                                  ,
                                  width: 125,
                                  height: 125)
-        legExtensionPressButton.frame = CGRect(x: standingLegCurlPressButton.right + 3,
+        legExtensionPressButton.frame = CGRect(x: standingLegCurlPressButton.right + 5,
                                  y: 10,
                                  width: 125,
                                  height: 125)
-        lyingLegCurlPressButton.frame = CGRect(x: legExtensionPressButton.right + 3,
+        lyingLegCurlPressButton.frame = CGRect(x: legExtensionPressButton.right + 5,
                                  y: 10
                                  ,
                                  width: 125,
                                  height: 125)
-        seatedLegCurlPressButton.frame = CGRect(x: lyingLegCurlPressButton.right + 3,
+        seatedLegCurlPressButton.frame = CGRect(x: lyingLegCurlPressButton.right + 5,
                                  y: 10,
                                  width: 125,
                                  height: 125)
-        standingCalfMachineButton.frame = CGRect(x: seatedLegCurlPressButton.right + 3,
+        standingCalfMachineButton.frame = CGRect(x: seatedLegCurlPressButton.right + 5,
                                  y: 10
                                  ,
                                  width: 125,
                                  height: 125)
-        haxSquatButton.frame = CGRect(x: standingCalfMachineButton.right + 3,
+        haxSquatButton.frame = CGRect(x: standingCalfMachineButton.right + 5,
                                  y: 10,
                                  width: 125,
                                  height: 125)
-        legPressButton.frame = CGRect(x: haxSquatButton.right + 3,
+        legPressButton.frame = CGRect(x: haxSquatButton.right + 5,
                                  y: 10
                                  ,
                                  width: 125,
                                  height: 125)
-        beltSquatButton.frame = CGRect(x: legPressButton.right + 3,
+        beltSquatButton.frame = CGRect(x: legPressButton.right + 5,
                                  y: 10,
                                  width: 125,
                                  height: 125)

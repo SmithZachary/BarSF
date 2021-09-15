@@ -35,6 +35,11 @@ class QRViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "QR Stregnth"
+        navigationItem.largeTitleDisplayMode = .always
+    
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.isTranslucent = true
 //        navigationController?.navigationBar.largeContentTitle = "true"
 //        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.black]
 //
@@ -86,9 +91,20 @@ class QRViewController: UIViewController {
             captureSession.startRunning()
             
             // Move the message label and top bar to the front
-//            view.bringSubviewToFront(messageLabel)
+            view.bringSubviewToFront(messageLabel)
 //            view.bringSubviewToFront(topBar)
-            
+            messageLabel.font = UIFont(name: "din condensed", size: 25)
+            messageLabel.textAlignment = .center
+            messageLabel.text = """
+            Scan a QR Code on a Machine To Get Started
+            """
+            messageLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
+            messageLabel.numberOfLines = 2
+            messageLabel.frame = CGRect(x: 0, y: view.height/3, width: view.width , height: 140)
+            messageLabel.frame.inset(by: UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5))
+            messageLabel.backgroundColor = .link
+            messageLabel.alpha = 0.5
+            navigationController?.navigationBar.isTranslucent = true
             // Initialize QR Code Frame to highlight the QR Code
             qrCodeFrameView = UIView()
             
@@ -105,15 +121,57 @@ class QRViewController: UIViewController {
             return
         }
     }
-    
     @objc private func didTapProfile() {
-        let vcOne = storyboard?.instantiateViewController(identifier: "ProfileViewController") as! UIViewController
-        present(vcOne, animated: true, completion:nil)
-    }}
+        let alert = UIAlertController(
+            title: nil,
+            message: nil,
+            preferredStyle: .actionSheet
+        )
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {
+            action in
+            
+                 // Called when user taps outside
+        }))
+
+        alert.addAction(
+            .init(title: "Profile", style: .default) { _ in
+                let vcOne = self.storyboard?.instantiateViewController(identifier: "ProfileViewController")
+                self.present(vcOne ?? ProfileViewController(), animated: true, completion:nil)
+                
+            }
+        )
+
+      
+        alert.addAction(
+            .init(title: "Personal Trainers", style: .default) { _ in
+                let vcOne = self.storyboard?.instantiateViewController(identifier: "redVC")
+                self.present(vcOne!, animated: true, completion:nil)
+            }
+        )
+      
+        present(alert, animated: true)
+        
+        alert.addAction(
+            .init(title: "Shop(Coming Soon)", style: .default) { _ in
+              
+            }
+        )
+        alert.addAction(
+            .init(title: "Member Services(Coming Soon)", style: .default) { _ in
+              
+            }
+        )
+        
+        
+        
+        
+    }
+    
+}
 
 extension QRViewController: AVCaptureMetadataOutputObjectsDelegate {
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
-        // Check if the metadataObjects array is not nil and it contains at least one object
+        // Check metadataObjects array is not nil and it contains at least one object
         if metadataObjects.isEmpty {
             print("------------------------------")
             qrCodeFrameView?.frame = CGRect.zero
@@ -168,12 +226,13 @@ extension QRViewController: AVCaptureMetadataOutputObjectsDelegate {
                 present(vcOne, animated: true, completion:nil)
             case "https://projectbar.page.link/16" :  let vcOne = storyboard?.instantiateViewController(identifier: "IsoLatLowRowViewController") ?? WorkOutViewController() as UIViewController
                 present(vcOne, animated: true, completion:nil)
-            case "https://projectbar.page.link/17" :  let vcOne = storyboard?.instantiateViewController(identifier: "ChestSupportedtbarRowViewController") ?? WorkOutViewController() as UIViewController
-                present(vcOne, animated: true, completion:nil)
+            case "https://projectbar.page.link/17" : performSegue(withIdentifier: "chestSupport", sender: nil)
+                
+//                let vcOne = storyboard?.instantiateViewController(identifier: "ChestSupporedTBarRowViewController") ?? WorkOutViewController() as UIViewController
+//                present(vcOne, animated: true, completion:nil)
             case "https://projectbar.page.link/18" :  let vcOne = storyboard?.instantiateViewController(identifier: "IsoLatDYRowViewController") ?? WorkOutViewController() as UIViewController
                 present(vcOne, animated: true, completion:nil)
-            default: let vcOne = storyboard?.instantiateViewController(identifier: "MainMenuViewController") ?? WorkOutViewController() as UIViewController
-                present(vcOne, animated: true, completion:nil)
+            default: performSegue(withIdentifier: "wokwok", sender: nil)
             
     
                 
@@ -196,7 +255,7 @@ extension QRViewController: AVCaptureMetadataOutputObjectsDelegate {
                         } else {
                            UIApplication.shared.openURL(url)
                         }
-                        // messageLabel.text = metadataObj.stringValue
+//                         messageLabel.text = metadataObj.stringValue
                     }
                 }            }
         }

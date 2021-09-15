@@ -51,16 +51,18 @@
 		B60DA6D726E2695100F3AE8A /* LegPressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6D626E2695100F3AE8A /* LegPressViewController.swift */; };
 		B60DA6D926E2698800F3AE8A /* BeltSquatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6D826E2698800F3AE8A /* BeltSquatViewController.swift */; };
 		B60DA6DB26E269A900F3AE8A /* GluteDriveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DA6DA26E269A900F3AE8A /* GluteDriveViewController.swift */; };
+		B60FCA9626F03A190096D6FF /* WorkoutDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FCA9526F03A180096D6FF /* WorkoutDisplay.swift */; };
+		B60FCA9826F0ED290096D6FF /* IsoLateralLowRowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FCA9726F0ED290096D6FF /* IsoLateralLowRowViewController.swift */; };
+		B60FCA9A26F0F4F60096D6FF /* IsoDYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FCA9926F0F4F60096D6FF /* IsoDYViewController.swift */; };
 		B6A4C54926E26C5500C2A656 /* FlatBenchPressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4C54826E26C5400C2A656 /* FlatBenchPressViewController.swift */; };
 		B6A4C54B26E26C7100C2A656 /* PeckDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4C54A26E26C7100C2A656 /* PeckDeckViewController.swift */; };
 		B6A4C54D26E26C9A00C2A656 /* InclinePressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4C54C26E26C9A00C2A656 /* InclinePressViewController.swift */; };
 		B6A4C54F26E26D2600C2A656 /* IsoLaterWideChestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4C54E26E26D2600C2A656 /* IsoLaterWideChestViewController.swift */; };
 		B6A4C55126E26D5100C2A656 /* PowerPressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4C55026E26D5100C2A656 /* PowerPressViewController.swift */; };
-		B6A4C55426E26D9500C2A656 /* IsoLatLowRowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4C55326E26D9500C2A656 /* IsoLatLowRowViewController.swift */; };
 		B6A4C55626E26DF900C2A656 /* ChestSuppordtbarRowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4C55526E26DF900C2A656 /* ChestSuppordtbarRowViewController.swift */; };
 		B6A4C55826E26E2D00C2A656 /* IsoLatDYRowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4C55726E26E2D00C2A656 /* IsoLatDYRowViewController.swift */; };
-		B6A4C57E26E2BC7700C2A656 /* spaceMuleCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4C57D26E2BC7700C2A656 /* spaceMuleCodeViewController.swift */; };
 		B6A4C58026E2D17B00C2A656 /* buttonback.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4C57F26E2D17B00C2A656 /* buttonback.swift */; };
+		B6E4B25F26E59D830096459D /* InverseCurlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E4B25E26E59D830096459D /* InverseCurlViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,16 +116,18 @@
 		B60DA6D626E2695100F3AE8A /* LegPressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegPressViewController.swift; sourceTree = "<group>"; };
 		B60DA6D826E2698800F3AE8A /* BeltSquatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeltSquatViewController.swift; sourceTree = "<group>"; };
 		B60DA6DA26E269A900F3AE8A /* GluteDriveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GluteDriveViewController.swift; sourceTree = "<group>"; };
+		B60FCA9526F03A180096D6FF /* WorkoutDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDisplay.swift; sourceTree = "<group>"; };
+		B60FCA9726F0ED290096D6FF /* IsoLateralLowRowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsoLateralLowRowViewController.swift; sourceTree = "<group>"; };
+		B60FCA9926F0F4F60096D6FF /* IsoDYViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsoDYViewController.swift; sourceTree = "<group>"; };
 		B6A4C54826E26C5400C2A656 /* FlatBenchPressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatBenchPressViewController.swift; sourceTree = "<group>"; };
 		B6A4C54A26E26C7100C2A656 /* PeckDeckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeckDeckViewController.swift; sourceTree = "<group>"; };
 		B6A4C54C26E26C9A00C2A656 /* InclinePressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InclinePressViewController.swift; sourceTree = "<group>"; };
 		B6A4C54E26E26D2600C2A656 /* IsoLaterWideChestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsoLaterWideChestViewController.swift; sourceTree = "<group>"; };
 		B6A4C55026E26D5100C2A656 /* PowerPressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerPressViewController.swift; sourceTree = "<group>"; };
-		B6A4C55326E26D9500C2A656 /* IsoLatLowRowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsoLatLowRowViewController.swift; sourceTree = "<group>"; };
 		B6A4C55526E26DF900C2A656 /* ChestSuppordtbarRowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChestSuppordtbarRowViewController.swift; sourceTree = "<group>"; };
 		B6A4C55726E26E2D00C2A656 /* IsoLatDYRowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsoLatDYRowViewController.swift; sourceTree = "<group>"; };
-		B6A4C57D26E2BC7700C2A656 /* spaceMuleCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spaceMuleCodeViewController.swift; sourceTree = "<group>"; };
 		B6A4C57F26E2D17B00C2A656 /* buttonback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonback.swift; sourceTree = "<group>"; };
+		B6E4B25E26E59D830096459D /* InverseCurlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InverseCurlViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +180,6 @@
 		B60DA66F26E1AF0400F3AE8A /* BarSF */ = {
 			isa = PBXGroup;
 			children = (
-				B6A4C57A26E2BC4300C2A656 /* SpaceMule */,
 				B60DA6AB26E1B53400F3AE8A /* ViewControllers */,
 				B60DA6A426E1B46900F3AE8A /* Views */,
 				B60DA69B26E1B3BF00F3AE8A /* Trainers */,
@@ -241,6 +244,7 @@
 				B6A4C54726E26C3000C2A656 /* Chest */,
 				B60DA6C526E266E400F3AE8A /* Legs */,
 				B60DA6A226E1B44600F3AE8A /* WorkoutViewController.swift */,
+				B60FCA9526F03A180096D6FF /* WorkoutDisplay.swift */,
 			);
 			path = Workouts;
 			sourceTree = "<group>";
@@ -304,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				B60DA6C626E266FE00F3AE8A /* GluteatorViewController.swift */,
+				B6E4B25E26E59D830096459D /* InverseCurlViewController.swift */,
 				B60DA6C826E267A600F3AE8A /* SuperSquatViewController.swift */,
 				B60DA6CA26E267D400F3AE8A /* StandingLegCurlViewController.swift */,
 				B60DA6CC26E267F800F3AE8A /* LegExtensionViewController.swift */,
@@ -333,19 +338,12 @@
 		B6A4C55226E26D7200C2A656 /* Back */ = {
 			isa = PBXGroup;
 			children = (
-				B6A4C55326E26D9500C2A656 /* IsoLatLowRowViewController.swift */,
 				B6A4C55526E26DF900C2A656 /* ChestSuppordtbarRowViewController.swift */,
 				B6A4C55726E26E2D00C2A656 /* IsoLatDYRowViewController.swift */,
+				B60FCA9726F0ED290096D6FF /* IsoLateralLowRowViewController.swift */,
+				B60FCA9926F0F4F60096D6FF /* IsoDYViewController.swift */,
 			);
 			path = Back;
-			sourceTree = "<group>";
-		};
-		B6A4C57A26E2BC4300C2A656 /* SpaceMule */ = {
-			isa = PBXGroup;
-			children = (
-				B6A4C57D26E2BC7700C2A656 /* spaceMuleCodeViewController.swift */,
-			);
-			path = SpaceMule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,16 +486,15 @@
 				B60DA6CB26E267D400F3AE8A /* StandingLegCurlViewController.swift in Sources */,
 				B60DA6A026E1B40C00F3AE8A /* EZSwipeViewController.swift in Sources */,
 				B60DA69626E1B12700F3AE8A /* SearchResults.swift in Sources */,
-				B6A4C55426E26D9500C2A656 /* IsoLatLowRowViewController.swift in Sources */,
 				B60DA68E26E1B0CA00F3AE8A /* BarD.swift in Sources */,
 				B60DA69026E1B0E000F3AE8A /* Colors.swift in Sources */,
 				B60DA6D926E2698800F3AE8A /* BeltSquatViewController.swift in Sources */,
 				B6A4C54F26E26D2600C2A656 /* IsoLaterWideChestViewController.swift in Sources */,
 				B60DA6B726E1B5F100F3AE8A /* QRViewController.swift in Sources */,
 				B60DA67526E1AF0400F3AE8A /* ViewController.swift in Sources */,
+				B6E4B25F26E59D830096459D /* InverseCurlViewController.swift in Sources */,
 				B60DA6BC26E1B64800F3AE8A /* LocationPickerViewController.swift in Sources */,
 				B60DA6C226E1B6A200F3AE8A /* PhotoViewerViewController.swift in Sources */,
-				B6A4C57E26E2BC7700C2A656 /* spaceMuleCodeViewController.swift in Sources */,
 				B60DA6B026E1B58400F3AE8A /* ForgotPassViewController.swift in Sources */,
 				B60DA6D326E268B600F3AE8A /* StandingCalfMachineViewController.swift in Sources */,
 				B60DA67126E1AF0400F3AE8A /* AppDelegate.swift in Sources */,
@@ -518,10 +515,12 @@
 				B60DA69E26E1B3F000F3AE8A /* SwipeViewController.swift in Sources */,
 				B60DA6C926E267A600F3AE8A /* SuperSquatViewController.swift in Sources */,
 				B60DA6A326E1B44600F3AE8A /* WorkoutViewController.swift in Sources */,
+				B60FCA9826F0ED290096D6FF /* IsoLateralLowRowViewController.swift in Sources */,
 				B60DA69226E1B0FD00F3AE8A /* ConversationModel.swift in Sources */,
 				B6A4C54D26E26C9A00C2A656 /* InclinePressViewController.swift in Sources */,
 				B60DA6D126E2687300F3AE8A /* SeatedLegCurlViewController.swift in Sources */,
 				B60DA6DB26E269A900F3AE8A /* GluteDriveViewController.swift in Sources */,
+				B60FCA9626F03A190096D6FF /* WorkoutDisplay.swift in Sources */,
 				B60DA6D726E2695100F3AE8A /* LegPressViewController.swift in Sources */,
 				B6A4C58026E2D17B00C2A656 /* buttonback.swift in Sources */,
 				B60DA6B526E1B5D200F3AE8A /* MainMenuViewController.swift in Sources */,
@@ -529,6 +528,7 @@
 				B60DA6A826E1B4E600F3AE8A /* NewConversationCell.swift in Sources */,
 				B60DA6CF26E2685100F3AE8A /* LyingLegExtensionViewController.swift in Sources */,
 				B60DA6CD26E267F800F3AE8A /* LegExtensionViewController.swift in Sources */,
+				B60FCA9A26F0F4F60096D6FF /* IsoDYViewController.swift in Sources */,
 				B6A4C55126E26D5100C2A656 /* PowerPressViewController.swift in Sources */,
 				B60DA6C026E1B67700F3AE8A /* ConversationsViewController.swift in Sources */,
 			);
@@ -680,17 +680,23 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BarSF/BarSF.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 3MSCVD9F92;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				INFOPLIST_FILE = BarSF/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.spaceMuleTech.BarSF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
@@ -702,15 +708,21 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BarSF/BarSF.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 3MSCVD9F92;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				INFOPLIST_FILE = BarSF/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.spaceMuleTech.BarSF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -116,7 +116,7 @@ alert.addAction(UIAlertAction(title:"Dismiss",
        
         scrollView.frame = view.bounds
 
-        let size = scrollView.width/3
+       
         label.frame = CGRect(x: 0,
                              
                                  y: 200,

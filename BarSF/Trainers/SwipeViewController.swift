@@ -170,7 +170,7 @@ extension MySwipeVC: EZSwipeControllerDataSource {
       
         let label = UILabel()
         label.text = "Derek Hered Personal Training"
-        label.frame = CGRect(x: 30, y: derek.top - 40, width: 100, height: 20)
+        label.frame = CGRect(x: 30, y: derek.top - 40, width: 300, height: 20)
         let longLabel = UILabel()
         longLabel.numberOfLines = 12
         longLabel.text = """
@@ -210,7 +210,7 @@ extension MySwipeVC: EZSwipeControllerDataSource {
       
         let mlabel = UILabel()
         mlabel.text = "Matt Milbury Personal Training"
-        mlabel.frame = CGRect(x: 30, y: matt.top - 40, width: 100, height: 20)
+        mlabel.frame = CGRect(x: 30, y: matt.top - 40, width: 300, height: 20)
         let mlongLabel = UILabel()
         mlongLabel.numberOfLines = 12
         mlongLabel.text = """

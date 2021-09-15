@@ -9,7 +9,23 @@
 import Foundation
 import UIKit
 extension UIView {
-    
+   
+    func addPicCustom(String: String) {
+        // screen width and height:
+        let widtha = UIScreen.main.bounds.size.width
+        let heighta = UIScreen.main.bounds.size.height
+        
+
+        let imageViewBackground = UIImageView(frame: CGRect(x: 0, y: 0, width: widtha, height: heighta))
+        imageViewBackground.image = UIImage(named: String)!
+        imageViewBackground.alpha = 0.8
+        
+        // you can change the content mode:
+        imageViewBackground.contentMode = UIView.ContentMode.scaleToFill
+
+        self.addSubview(imageViewBackground)
+        self.sendSubviewToBack(imageViewBackground)
+    }
 func addRedGradient() {
     // screen width and height:
     let widtha = UIScreen.main.bounds.size.width
